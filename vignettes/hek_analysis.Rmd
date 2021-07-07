@@ -1,0 +1,27 @@
+---
+title: "hek_analysis"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{hek_analysis}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(glycoCapacityPredictR)
+```
+
+```{r}
+hek_values = setNames(pbpastex(header=T),c('gene','6e','ac2','sc','wt'))
+all_ranges = tissue_results_dpagt1 %>% group_by(gene) %>% summarise( lower=quantile(rel_diff,0.25),upper=quantile(rel_diff,0.75) )
+hek_dpagt1 = subset(hek_values,gene=='DPAGT1')
+hek_normalised = hek_values %>% mutate( `6e`=log(`6e`)-log(hek_dpagt1$`6e`), ac2=log(ac2)-log(hek_dpagt1$ac2), sc=log(sc)-log(hek_dpagt1$sc), wt=log(wt)-log(hek_dpagt1$wt) )
+merge(hek_normalised,all_ranges,by='gene') %>% mutate( `6e_expressed`=ifelse(`6e` > lower,1,0),`ac2_expressed`=ifelse(`ac2` > lower,1,0),`sc_expressed`=ifelse(`sc` > lower,1,0),`wt_expressed`=ifelse(`wt` > lower,1,0) ) %>% writexl::write_xlsx(path='hek_expression.xlsx')
+```
