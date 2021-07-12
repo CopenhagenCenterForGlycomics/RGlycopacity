@@ -1,120 +1,146 @@
-#'@title shoud fit on one line, be written in sentence case, and not end in a full stop.
+#'@title Retrieval of reference gene normalised pseudobulks from PanglaoDB
 #'
-#'@description this comes first in the documentation and should briefly describe what the function does
+#'@description this function retrieves the pre-computed reference gene normalised pseudobulks from PanglaoDB
 #'
-#'@details this is a (often long) section that comes after the argument description and should provide any other important details of how the function operates. The details are optional.
-#'
-#'@return
+#'@return a data.frame of reference gene normalized pseudobulks
 #'
 #'@examples
-get_tissue_results_dpagt1 <- function() {
-  # TODO load single cell results from a txt file or variable somewhere [tissue_results_dpagt1]
-}
+#'reference_data <- get_tissue_results_dpagt1
+get_tissue_results_dpagt1 <- function() { tissue_results_dpagt1 }
 
-#'@title shoud fit on one line, be written in sentence case, and not end in a full stop.
+#'@title Retrieval of glycogenes from set list.
 #'
-#'@description this comes first in the documentation and should briefly describe what the function does
+#'@description this function retrieves the set of glycogenes to subset our reference and input data by
 #'
-#'@details this is a (often long) section that comes after the argument description and should provide any other important details of how the function operates. The details are optional.
-#'
-#'@return
+#'@return a chqracter vector of glycogenes
 #'
 #'@examples
-get_glycogenes <- function() {
-  # TODO pull glycogenes of interest from a txt file or variable somewhere
-}
+#'genes <- get_glycogenes()
+get_glycogenes <- function() { glycogenes }
 
-#'@title shoud fit on one line, be written in sentence case, and not end in a full stop.
+#'@title Predicting glycosylation capacity in bulk data from single cell pseudobulks
 #'
-#'@description this comes first in the documentation and should briefly describe what the function does
+#'@description this function determines whether a gene is expressed in bulk data by leveraging single cell reference data from PanglaoDB
 #'
-#'@details this is a (often long) section that comes after the argument description and should provide any other important details of how the function operates. The details are optional.
+#'@param data an n gene x m sample matrix of bulk data values. Expression units can be in either TPM or FPKM
+#'@param reference_data one of either a) a function returning a data.frame of reference gene normalized single cell pseudobulks, or b) a user supplied data.frame in the same format as that returned by the function in a. Default is (a)
+#'@param tissues one of either a) a character vector of tissues and/or celltypes that the reference data can be filtered for, or b) an NA value indicating that all tissues/celltypes should be used. Default is (b)
+#'@param quantile_cutoff a numeric vector of values between [0, 1] indicating the quantile to be computed for the normalised pseudobulk distribution of each gene. Default is c(0.25, 0.75)
+#'@param reference_gene a character vector of reference gene(s) by which to normalise the input data matrix. If more than one reference gene is supplied, the geometric mean of normalized pseudobulks for the genes are computed in each sample. Default is c("DPAGT1")
+#'@param genes one of either a) a function returning a character vector of glycogenes to be normalised, b) a user supplied character vector of genes, or c) an NA value indicating that all genes in the input data should be normalised. Default is (a)
+#'@param log_transform a function of a) natural log, b) log1p. Additional log transform functions can be supplied by the user. Default is (a).
 #'
-#'@param data description
-#'@param reference_data description
-#'@param tissues description
-#'@param quantile_cutoff description
-#'@param reference_gene description
-#'@param genes description
-#'@param log_transform description
-#'@param reference description
-#'
-#'@return
+#'@return a named list of three data.frames.
+#'normalised_expression are the reference gene normalised values in each bulk input sample.
+#'expression_quantiles are the set of values computed at each specified quantile on the normalised pseudobulk distribution of each gene in the reference data.
+#'predicted_expression are the set of prediction statuses computed from applying the expression quantiles from the reference data to each bulk input sample.
 #'
 #'@examples
+#'input_data <- ...
+#'reference_data <- ...
+#'main(input_data)
+#'main(input_data, quantile_cutoff = c(0.95))
+#'main(input_data, reference_gene = c("DPAGT1","STT3A"))
+#'main(input_data, tissues = 'Brain')
+#'main(input_data, reference_data = reference_data)
+#'main(input_data, genes = c("XYLT1","XYLT2","STT3B"))
+#'main(input_data, log_transform = log10)
 #'
-#'\dontrun{
-#'encloses code that should not be run.
-#'}
-#'\dontshow{
-#'encloses code that is invisible on help pages,
-#'but will be run both by the package checking tools,
-#'and the example() function.
-#'This was previously testonly, and that form is still accepted.
-#'}
-#'\donttest{
-#'encloses code that typically should be run,
-#'but not during package checking.
-#'The default run.donttest = interactive() leads example() use in other help page examples to skip  \donttest sections appropriately.
-#'}
-main <- function(data, reference_data = get_tissue_results_dpagt1, tissues = c(), quantile_cutoff = c(0.25, 0.75), reference_gene = c('DPAGT1'), genes = get_glycogenes, log_transform = c(log, log1p)) {
+#'@export
+main <- function(data, reference_data = get_tissue_results_dpagt1, tissues = NA, quantile_cutoff = c(0.25, 0.75), reference_gene = c('DPAGT1'), genes = get_glycogenes, log_transform = c(log, log1p)) {
 
-  cl <- match.call(expand.dots = T)
-  cl_args <- names(cl)
-  fx_args <- names(as.list(args(main)))
-  match(cl_args, fx_args)
-  for(arg in as.list(args(main))) { cl[[arg]] <- match.arg(arg) }
+  ## stop condition for empty arguements ----
+  null_args <- names(Filter(Negate(isFALSE), eapply(environment(), is.null)))
+  if(length(null_args) > 0) {
+    stop(paste('The following arguments require an input value:', paste0(null_args, collapse = ','))) }
+
+  ## stop condition for data ----
+  if(!is.matrix(data)) { stop('data must be an object of class matrix') }
+
+  ## stop condition for reference_data ----
+  if(sum(!is.data.frame(reference_data), !is.function(reference_data) == 2)) {
+    stop('reference_data must be an object of class function or data.frame') }
+
+  ## stop condition for tissues ----
+  if(!is.character(tissues)) {
+    stop('tissues must be an object of class character') }
+
+  ## stop condition for quantile_cutoff ----
+  if(!is.numeric(quantile_cutoff)) {
+    stop('quantile_cutoff must be an object of class numeric')}
+
+  ## stop condition for reference_gene ----
+  if(!is.character(reference_gene)) {
+    stop('reference_gene must be an object of class character') }
+
+  ## stop condition for genes ----
+  if(sum(!is.function(genes), !is.character(genes), !is.na(genes)) == 3) {
+    stop('genes must be an object of class function, character, or NA') }
+
+  ## stop condition for log_transform ----
+  log_transform <- match.arg(log_transform)
 
   ## retrieving genes to normalize ----
   genes <-
     switch(
-      c('function','character')[c(
-        is.function(eval(cl$genes)),
-        is.character(cl$genes))],
-      'function' = match.fun(cl$genes)(),
-      'character' = unique(cl$genes, cl$reference_gene),
-      rownames(data))
+      c('function','character','NA')[c(
+        is.function(genes),
+        is.character(genes),
+        is.na(genes))],
+      'function' = match.fun(genes)(),
+      'character' = unique(genes, reference_gene),
+      'NA' = rownames(data))
+
+  ## retrieving reference dataset ----
+  reference_data <-
+    switch(
+      c('function','matrix')[c(
+        is.function(reference_data),
+        is.matrix(reference_data))],
+      'function' = match.fun(reference_data)(),
+      'matrix' = reference_data)
+
+  ## filtering datasets for retrieved genes ----
+  reference_data <- reference_data[reference_data$genes %in% genes,]
+  data <- data[genes,]
+
+  ## filtering reference dataset for select tissues ----
+  reference_data <-
+    switch(
+      c('subset')[length(tissues) > 0],
+      'subset' = reference_data[reference_data$tissue %in% tissue,],
+      reference_data)
+
+  ## computing value for specified quantile cutoffs on dpagt1 normalized data
+  expression_quantiles <- aggregate.data.frame(
+    x = reference_data$rel_diff,
+    by = list(gene = reference_data$gene),
+    FUN = function(x) { sapply(quantile_cutoff, quantile, x = x) },
+    simplify = T)
+  rownames(expression_quantiles) <- expression_quantiles$gene
+  expression_quantiles$gene <- NULL
+  expression_quantiles <- as.matrix(expression_quantiles)
+  colnames(all_ranges) <- as.character(quantile_cutoff)
 
   ## ensuring genes of single cell reference and supplied samples are in order ----
   ordering <-
     sort(unique(c(
       rownames(data),
-      rownames(tissue_results_dpagt1))))
-  tissue_results_dpagt1 <- tissue_results_dpagt1[ordering,]
+      rownames(expression_quantiles))))
+  expression_quantiles <- expression_quantiles[ordering,]
   data <- data[ordering,]
-
-  ## filtering samples and reference by retrieved genes ----
-  tissue_results_dpagt1 <- tissue_results_dpagt1[genes,]
-  data <- data[genes,]
-
-  ## filtering reference by choice of tissue ----
-  # TODO pseudocode currently
-  tissue_results_dpagt1 <-
-    switch(
-      c('subset')[length(tissues) > 0],
-      'subset' = tissue_results_dpagt1[tissue_results_dpagt1$tissue %in% tissue,],
-      tissue_results_dpagt1)
-
-  ## computing value for specified quantile cutoffs on dpagt1 normalized data
-  # TODO pseudocode currently
-  expression_quantiles <- aggregate.data.frame(
-    x = tissue_results_dpagt1,
-    by = tissue_results_dpagt1$gene,
-    FUN = ...,
-    simplify = F)
-  names(all_ranges) <- as.character(quantile_cutoff)
 
   ## computing log of reference gene in all samples ----
   reference <- switch(
     c('one','greater')[c(
-      length(cl$reference_gene) == 1,
-      length(cl$reference_gene) > 1)],
+      length(reference_gene) == 1,
+      length(reference_gene) > 1)],
     'one' = data[reference_gene,],
     'greater' = exp(log(colMeans(data[reference_gene,]))))
-  log_reference_data <- match.fun(cl$log_transform)(reference)
+  log_reference_data <- match.fun(log_transform)(reference)
 
   ## computing log of all genes in all samples ---
-  log_data <- match.fun(cl$log_transform)(data)
+  log_data <- match.fun(log_transform)(data)
 
   ## computing normalized expression ----
   normalised_expression <- log_data - log_reference_data
@@ -133,8 +159,8 @@ main <- function(data, reference_data = get_tissue_results_dpagt1, tissues = c()
       names(normalised_expression))
 
   list(
-    normalised_expression,
-    expression_quantiles,
-    predicted_expression)
+    normalised_expression = normalised_expression,
+    expression_quantiles = expression_quantiles,
+    predicted_expression = predicted_expression)
 
 }

@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(glycoCapacityPredictR)
+system.file("extdata", "foo.csv", package = "glycoCapacityPredictR", mustWork = T)
 ```
 
 ```{r}

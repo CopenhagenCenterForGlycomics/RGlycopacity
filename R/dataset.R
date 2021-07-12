@@ -1,22 +1,15 @@
-#' Prices of 50,000 round cut diamonds.
+#' DPAGT1 normalised pseudobulks of glycogenes
 #'
-#' A dataset containing the prices and other attributes of almost 54,000
-#' diamonds.
+#' A dataset containing normalised pseudobulks of mouse and human PanglaoDB Chromium10x clusters for 224 glycogenes.
 #'
-#' @format A data frame with 53940 rows and 10 variables
+#' @format A data frame with 969526 rows and 5 variables
 #' \describe{
-#'   \item{price}{price in US dollars (\$326--\$18,823)}
-#'   \item{carat}{weight of the diamond (0.2--5.01)}
-#'   \item{cut}{quality of the cut (Fair, Good, Very Good, Premium, Ideal)}
-#'   \item{color}{diamond colour, from D (best) to J (worst)}
-#'   \item{clarity}{a measurement of how clear the diamond is (I1 (worst), SI2,
-#'     SI1, VS2, VS1, VVS2, VVS1, IF (best))}
-#'   \item{x}{length in mm (0--10.74)}
-#'   \item{y}{width in mm (0--58.9)}
-#'   \item{z}{depth in mm (0--31.8)}
-#'   \item{depth}{total depth percentage = z / mean(x, y) = 2 * z / (x + y) (43--79)}
-#'   \item{table}{width of top of diamond relative to widest point (43--95)}
+#'   \item{rel_diff}{DPAGT1 normalized pseudobulks (-7.627605--5.298152)}
+#'   \item{tissue}{Tissue and cell type of each cluster, separated by colon (nTissue = 190; nCelltype = 101)}
+#'   \item{gene}{The glycogene for which a pseudobulk is computed (nGene = 224)}
+#'   \item{source}{Organism from which the cluster is derived (Human, Mouse)}
+#'   \item{samples}{I have no idea at all}
 #' }
-#' @source <http://www.diamondse.info/>
+#' @source repo:glyco_atlas_data/generate_log_dpagt1_norm; revision:07c39ba-dirty
 "tissue_results_dpagt1"
 #> [1] "tissue_results_dpagt1"
