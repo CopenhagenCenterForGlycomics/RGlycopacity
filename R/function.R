@@ -1,245 +1,281 @@
-#'@title Retrieval of reference gene normalised pseudobulks from PanglaoDB
+#'@title trimmed mean pseudobulk and pseudopresence calculation
 #'
-#'@description this function retrieves the pre-computed reference gene normalised pseudobulks from PanglaoDB
+#'@description computing pseudobulks on seurat object
 #'
-#'@param organism a character argument specifying the human or mouse specific reference dataset to return. Default  value is 'human'
+#'@param obj.seurat seurat object with raw counts and cell types as identities
 #'
-#'@return a data.frame of reference gene normalized pseudobulks
-#'
-#'@examples
-#'\dontrun{
-#'reference_data <- get_tissue_results_dpagt1()
-#'reference_data <- get_tissue_results_dpagt1('mouse')
-#'}
-get_tissue_results_dpagt1 <- function(organism = c('human','mouse')) {
-
-  organism <- match.arg(organism, choices = c('human','mouse'))
-
-  reference_data <-
-    switch(
-      organism,
-      'human' = subset(tissue_results_dpagt1, source == 'human'),
-      'mouse' = subset(tissue_results_dpagt1, source == 'mouse'))
-
-  reference_data
-
-}
-
-#'@title Retrieval of glycogenes from set list.
-#'
-#'@description this function retrieves the set of glycogenes to subset our reference and input data by
-#'
-#'@param organism a character argument specifying the human or mouse specific gene symbols to return. Default  value is 'human'
-#'
-#'@return a chqracter vector of glycogenes
+#'@return a list of pseudobulks, pseudopresences and cluster sizes
 #'
 #'@examples
-#'\dontrun{
-#'genes_human <- get_glycogenes()
-#'genes_mouse <- get_glycogenes('mouse')
-#'}
-get_glycogenes <- function(organism = c('human','mouse')) {
-
-  organism <- match.arg(organism, choices = c('human','mouse'))
-
-  switch(
-    organism,
-    'human' = human_glycogenes,
-    'mouse' = mouse_glycogenes)
-
-}
-
-#'@title Predicting glycosylation capacity in bulk data from single cell pseudobulks
 #'
-#'@description this function determines whether a gene is expressed in bulk data by leveraging single cell reference data from PanglaoDB
-#'
-#'@param data an n gene x m sample matrix of bulk data values. Expression units can be in either TPM or FPKM
-#'@param reference_data one of either a) a function returning a data.frame of reference gene normalized single cell pseudobulks, or b) a user supplied data.frame in the same format as that returned by the function in a. Default is (a)
-#'@param organism an (a) character argument specifying the human or mouse specific datasets and gene symbols to return, or (b) an NA value indicating that user is using own data. Default value is 'human'
-#'@param tissues one of either a) a character vector of tissues and/or celltypes that the reference data can be filtered for, or b) an NA value indicating that all tissues/celltypes should be used. Default is (b)
-#'@param quantile_cutoff a numeric vector of values between (0, 1) indicating the quantile to be computed for the normalised pseudobulk distribution of each gene. Default is c(0.25, 0.75)
-#'@param reference_gene a character vector of reference gene(s) by which to normalise the input data matrix. If more than one reference gene is supplied, the geometric mean of normalized pseudobulks for the genes are computed in each sample. Default is c("DPAGT1")
-#'@param genes one of either a) a function returning a character vector of glycogenes to be normalised, b) a user supplied character vector of genes, or c) an NA value indicating that all genes in the input data should be normalised. Default is (a)
-#'@param log_transform a function of a) natural log, b) log1p. Additional log transform functions can be supplied by the user. Default is (a).
-#'
-#'@return a named list of three data.frames.
-#'normalised_expression are the reference gene normalised values in each bulk input sample.
-#'expression_quantiles are the set of values computed at each specified quantile on the normalised pseudobulk distribution of each gene in the reference data.
-#'predicted_expression are the set of prediction statuses computed from applying the expression quantiles from the reference data to each bulk input sample.
-#'
-#'@examples
-#'input_data <- as.matrix(read.table(
-#'system.file("extdata", "GT_FPKM.csv", package = "glycoCapacityPredictR", mustWork = TRUE),
-#'header = TRUE, sep = ',', row.names = 1))
-#'
-#'head(main(input_data)$normalised_expression)
-#'
-#'head(main(input_data,
-#'quantile_cutoff = c(0.95))$normalised_expression)
-#'
-#'head(main(input_data,
-#'reference_gene = c("DPAGT1","STT3A"))$normalised_expression)
-#'
-#'head(main(input_data,
-#'tissues = 'Peripheral_blood_mononuclear_cells:Dendritic cells')$normalised_expression)
-#'
-#'head(main(input_data,
-#'genes = c("XYLT1","XYLT2","STT3B"))$normalised_expression)
-#'
-#'head(main(input_data,
-#'log_transform = 'log1p')$normalised_expression)
-#'
-#'@importFrom stats aggregate.data.frame quantile setNames
+#'@importFrom Seurat NormalizeData GetAssayData
+#'@importFrom SeuratObject Idents as.sparse WhichCells
+#'@importFrom Matrix t sparseVector rowMeans rowSums
+#'@importFrom pbmcapply pbmclapply
 #'
 #'@export
-main <- function(data, reference_data = get_tissue_results_dpagt1, organism = c('human', 'mouse'), tissues = NA, quantile_cutoff = c(0.25, 0.75), reference_gene = c('DPAGT1'), genes = get_glycogenes, log_transform = c('log', 'log1p')) {
+compute_pseudobulk <- function(obj.seurat) {
+
+  requireNamespace('Matrix')
+
+  # 1e4 and log1p transforming raw counts
+  obj.seurat = Seurat::NormalizeData(obj.seurat, normalization.method = "LogNormalize", scale.factor = 10000, assay = 'RNA')
+  obj.sm = Seurat::GetAssayData(obj.seurat, slot = 'data')
+  obj.sm = Matrix::t(obj.sm)
+
+  # retaining quants in 10th-90th percentile per gene
+  col_indices <- 1:ncol(obj.sm)
+  row_indices <- 1:nrow(obj.sm)
+
+  batches.list <- split(col_indices, ceiling(seq_along(col_indices)/1000))
+
+  pbmcapply_function <- function(i, c.df, r.vec) {
+
+    value.vec <- c.df[r.vec, i]
+    quant.vec <- value.vec[which(value.vec > 0)]
+    cutof.vec <- quantile(quant.vec, na.rm = T, probs = c(0.1,0.9))
+    cutof.max <- which(value.vec > 0 & (value.vec < cutof.vec[1] | value.vec > cutof.vec[2]))
+    value.vec[cutof.max] <- NA
+    value.vec <- Matrix::sparseVector(value.vec, seq(value.vec), length(value.vec))
+    return(value.vec)
+
+  }
+
+  new.sm <-
+    do.call(
+      cbind,
+      lapply(batches.list, function(batch) {
+        do.call(
+          cbind,
+          lapply(
+            pbmcapply::pbmclapply(
+              X = batch,
+              FUN = pbmcapply_function,
+              obj.sm,
+              row_indices,
+              ignore.interactive = T),
+            as, "sparseMatrix"))
+        }))
+
+  rownames(new.sm) <- rownames(obj.sm)
+  colnames(new.sm) <- colnames(obj.sm)
+  obj.sm <- Matrix::t(new.sm)
+
+  # retrieving unique clusters
+  cluster_ids <- as.character(unique(SeuratObject::Idents(obj.seurat)))
+
+  # computing pseudobulk per cluster
+  pseudobulks.sm <-
+    SeuratObject::as.sparse(
+      do.call(
+        cbind,
+        lapply(cluster_ids, function(cluster) {
+          Matrix::rowMeans(obj.sm[, SeuratObject::WhichCells(obj.seurat, ident = cluster), drop = F], na.rm = T) })))
+  colnames(pseudobulks.sm) <- cluster_ids
+
+  # computing pseudopresence per cluster
+  pseudopresence.sm <-
+    SeuratObject::as.sparse(
+      do.call(
+        cbind,
+        lapply(cluster_ids, function(cluster) {
+          Matrix::rowSums(obj.sm[, SeuratObject::WhichCells(obj.seurat, ident = cluster), drop = F] > 0, na.rm = T) })))
+  colnames(pseudopresence.sm) <- cluster_ids
+
+  # retrieving cluster sizes
+  cluster_sizes.vec <- table(SeuratObject::Idents(obj.seurat))[cluster_ids]
+
+  list(
+    pseudobulks.sm = pseudobulks.sm,
+    pseudopresence.sm = pseudopresence.sm,
+    cluster_sizes.vec =  cluster_sizes.vec)
+
+}
+
+#'@title single cell gene expression prediction
+#'
+#'@description predicted expression of a gene in a single cell cluster
+#'
+#'@param ncells number of cells in the cluster
+#'@param pseudobulk mean expression of the gene in the cluster
+#'
+#'@return a pvalue corresponding to the probability that the gene is expressed in the cluster
+#'
+#'@examples
+#'
+#'@importFrom stats predict pt
+#'
+#'@export
+expression_prediction <- function(ncells, pseudobulk) {
+
+  s <-
+    stats::predict(
+      expression_model.lm$model2.lm,
+      newdata = data.frame(x = ncells),
+      se.fit = TRUE,
+      level = 0.95,
+      interval = "confidence")$fit[,'fit']
+
+  n   <- 7 # chosen based on the number of pseudobulk sizes that model is fit to
+  ts  <- (mean(expression_model.lm$xy.df$y[1:7]) - pseudobulk)/(s/sqrt(n))
+  p   <- 2*pt(-abs(ts), n-1)
+
+  return(p)
+
+}
+
+
+#'@title single cell pseudopresence prediction
+#'
+#'@description predicted expression of pseudobulk stability in a single cell cluster
+#'
+#'@param pseudobulk mean expression of the gene in the cluster
+#'@param pseudopresence number of cells with at least one transcript for the gene in the cluster
+#'
+#'@return a list of expected mean pseudopresence, expected var pseudopresence and a pvalue corresponding to the probability that the pseudobulk is stable
+#'
+#'@examples
+#'
+#'@importFrom stats predict pt
+#'
+#'@export
+pseudopresence_prediction <- function(pseudobulk, pseudopresence = NULL) {
+
+  mu_model.lm <- pseudopresence_model.lm$glycogene_mean_fit.lm
+  sd_model.lm <- pseudopresence_model.lm$glycogene_sd_fit.lm
+
+  # computing sample population parameter mean ----
+  mu <-
+    stats::predict(
+      mu_model.lm,
+      newdata = data.frame(pseudobulk_mean = pseudobulk),
+      se.fit = TRUE,
+      level = 0.95,
+      interval = "confidence")$fit[,'fit']
+
+  # computing sample population parameter variance ----
+  s <-
+    stats::predict(
+      sd_model.lm,
+      newdata = data.frame(pseudobulk = pseudobulk),
+      se.fit = TRUE,
+      level = 0.95,
+      interval = "confidence")$fit[,'fit']
+
+  if(!is.null(pseudopresence)) {
+
+    # n chosen based on the number of pseudobulks that model is fit to
+    n <- nrow(pseudopresence_model.lm$glycogene_sd_fit.lm$model)
+    ts  <- (mu - pseudopresence)/(s/sqrt(n))
+    p   <- 2*pt(-abs(ts), n-1)
+
+  } else { p <- NA }
+
+  list(
+    expected.mu = mu,
+    expected.s = s,
+    pval = p)
+}
+
+#'@title reference gene normalisation
+#'
+#'@description normalising on a reference gene for downstream comparison of glycogene ranges of expression
+#'
+#'@param genes a character vector of the sample genes
+#'@param values a named numeric vector of the counts to be transformed. Names are genes
+#'@param log_transform boolean indicating if a natural log + 1 transform should be applied
+#'
+#'@return a data.frame of genes, annotations, and normalised counts
+#'
+#'@examples
+#'
+#'@importFrom stats setNames
+#'
+#'@export
+normalise <- function(
+  genes,
+  values,
+  log_transform = T) {
+
+  if(log_transform) { values <- log(values + 1) }
+
+  seg_indices <- which(genes %in% segs)
+
+  seg_values <- values[seg_indices]
+
+  geom_mean <- if(any(seg_values < 0)) { mean() } else { function(x) { exp(mean(log(x))) } }
+
+  seg_value <- geom_mean(seg_values)
+
+  values <- values - seg_value
+
+  values
+}
+
+
+#'@title Predicting glycosylation capacity in test data from reference data
+#'
+#'@description this function determines whether a gene is expressed in test data by leveraging reference data
+#'
+#'@param test_data an n gene x m sample matrix of values.
+#'@param dynamic_ranges.char character reference to a stored set of ranges
+#'
+#'@return the set of prediction statuses computed from applying the expression quantiles from the reference data to each sample in the test data
+#'
+#'@examples
+#'
+#'@importFrom stats quantile setNames
+#'@importFrom Matrix t rowSums
+#'
+#'@export
+compute_intersects <- function(test_data, dynamic_ranges.char) {
 
   ## stop condition for empty arguements ----
   null_args <- names(Filter(Negate(isFALSE), eapply(environment(), is.null)))
   if(length(null_args) > 0) {
     stop(paste('The following arguments require an input value:', paste0(null_args, collapse = ','))) }
 
-  ## stop condition for data ----
-  if(!is.matrix(data)) { stop('data must be an object of class matrix') }
+  ## stop condition for test_data ----
+  if(!is.matrix(test_data)) { stop('test_data must be an object of class matrix') }
 
-  ## stop condition for reference_data ----
-  if(sum(!is.data.frame(reference_data), !is.function(reference_data)) == 2) {
-    stop('reference_data must be an object of class function or data.frame') }
-
-  ## stop condition for organism ----
-  organism <- match.arg(organism)
-  if(sum(!is.character(organism), !is.na(organism)) == 2) {
-    stop('organism must be an object of class character or NA') }
-
-  ## stop condition for tissues ----
-  if(sum(!is.character(tissues), !is.na(tissues)) == 2 ) {
-    stop('tissues must be an object of class character or NA') }
-
-  ## stop condition for quantile_cutoff ----
-  if(!is.numeric(quantile_cutoff)) {
-    stop('quantile_cutoff must be an object of class numeric') }
-
-  ## stop condition for reference_gene ----
-  if(!is.character(reference_gene)) {
-    stop('reference_gene must be an object of class character') }
-
-  ## stop condition for genes ----
-  suppressWarnings(
-    if(sum(!is.function(genes), !is.character(genes), !is.na(genes)) == 3) {
-      stop('genes must be an object of class function, character, or NA') })
-
-  ## stop condition for log_transform ----
-  log_transform <- match.arg(log_transform)
-  log_transform <- match.fun(log_transform)
-
-  ## retrieving genes to normalize ----
-  genes <-
-    switch(
-      c('function','character','NA')[c(
-        is.function(genes),
-        is.character(genes),
-        suppressWarnings(is.na(genes)))],
-      'function' = match.fun(genes)(organism),
-      'character' = unique(c(genes, reference_gene)),
-      'NA' = rownames(data))
-
-  ## retrieving reference dataset ----
-  reference_data <-
-    switch(
-      c('function','matrix')[c(
-        is.function(reference_data),
-        is.matrix(reference_data))],
-      'function' = match.fun(reference_data)(organism),
-      'matrix' = reference_data)
+  dynamic_ranges.char <-
+    match.arg(
+      dynamic_ranges.char,
+      c('bulk_ranges',
+        'tabula_sapiens_ranges',
+        'panglao_musculus_ranges',
+        'TCGA_ranges',
+        'GTEx_ranges',
+        'panglao_musculus_unknown_ranges',
+        'panglao_musculus_known_ranges'))
 
   ## filtering datasets for retrieved genes ----
-  reference_data <- reference_data[reference_data$gene %in% genes,]
-  data <- data[rownames(data) %in% genes,]
+  shared_genes <- intersect(unique(rownames(test_data)), unique(colnames(dynamic_ranges[[dynamic_ranges.char]]$expression_quantiles)))
 
-  ## filtering reference dataset for select tissues ----
-  reference_data <-
-    switch(
-      c('subset','all')[c(
-        is.character(tissues),
-        is.na(tissues))],
-      'subset' = reference_data[reference_data$tissue %in% tissues,],
-      'all' = reference_data)
-
-  ## computing value for specified quantile cutoffs on dpagt1 normalized data
-  expression_quantiles <- aggregate.data.frame(
-    x = reference_data$rel_diff,
-    by = list(gene = reference_data$gene),
-    FUN = function(x) { sapply(quantile_cutoff, quantile, x = x) },
-    simplify = T)
-  rownames(expression_quantiles) <- expression_quantiles$gene
-  expression_quantiles$gene <- NULL
-  expression_quantiles <- as.matrix(expression_quantiles)
-  colnames(expression_quantiles) <- as.character(quantile_cutoff)
-
-  ## ensuring genes of single cell reference and supplied samples are in order ----
-  ordering <-
-    sort(unique(c(
-      rownames(data),
-      rownames(expression_quantiles))))
-
-  missing_data <- ordering[-which(ordering %in% rownames(data))]
-  if(length(missing_data) > 0) {
-    empty_data <- matrix(NA, nrow = length(ordering), ncol = ncol(data), dimnames = list(ordering, colnames(data)))
-    empty_data[match(rownames(data), ordering),] <- data
-    data <- empty_data
-    remove(empty_data)
-  }
-
-  missing_quantiles <- ordering[-which(ordering %in% rownames(expression_quantiles))]
-  if(length(missing_quantiles) > 0) {
-    empty_quantiles <- matrix(NA, nrow = length(ordering), ncol = ncol(expression_quantiles), dimnames = list(ordering, colnames(expression_quantiles)))
-    empty_quantiles[match(rownames(expression_quantiles), ordering),] <- expression_quantiles
-    expression_quantiles <- empty_quantiles
-    remove(empty_quantiles)
-  }
-
-  data <- data[ordering,]
-  expression_quantiles <- expression_quantiles[ordering,]
-
-  ## computing log of reference gene in all samples ----
-  reference <- switch(
-    c('one','greater')[c(
-      length(reference_gene) == 1,
-      length(reference_gene) > 1)],
-    'one' = data[reference_gene,],
-    'greater' = exp(log(colMeans(data[reference_gene,]))))
-  log_reference_data <- log_transform(reference)
-
-  ## computing log of all genes in all samples ---
-  log_data <- log_transform(data)
-
-  ## computing normalized expression ----
-  normalised_expression <- log_data - log_reference_data
+  ## ensuring genes of reference_data and test_data are in order ----
+  test_data <- test_data[rownames(test_data) %in% shared_genes, , drop = F]
+  reference_data <- Matrix::t(dynamic_ranges[[dynamic_ranges.char]]$expression_quantiles[, shared_genes, drop = F])
+  reference_data <- as.matrix(reference_data)
+  reference_data <- reference_data[rownames(test_data), , drop = F]
 
   ## computing predicted expression for each gene at each cutoff ----
   predicted_expression <-
-    setNames(
-      lapply(data.frame(normalised_expression), function(sample_library) {
-        sample_prediction <-
-          setNames(
-            do.call(cbind.data.frame, lapply(
-              data.frame(expression_quantiles), function(cutoffs) {
-                ifelse(sample_library > cutoffs, 1, 0)
-              })),
-            colnames(expression_quantiles))
-        rownames(sample_prediction) <- ordering
-        sample_prediction
-      }),
-      colnames(normalised_expression))
+    mapply(
+      function(sample_library, cutoffs) { Matrix::rowSums(sample_library > cutoffs) },
+      data.frame(test_data),
+      replicate(ncol(test_data), reference_data, simplify = F))
 
-  list(
-    normalised_expression = normalised_expression,
-    expression_quantiles = expression_quantiles,
-    predicted_expression = predicted_expression)
+  ## labeling each prediction ----
+  predicted_classification <-
+    matrix(
+      as.character(
+        factor(
+          predicted_expression,
+          levels = 0:11,
+          labels = c('<0%', paste0('>',seq(0,100,10))))),
+      nrow = nrow(test_data), ncol = ncol(test_data),
+      dimnames = dimnames(test_data), byrow = F)
+
+  predicted_classification
 
 }
-
-# TODO choice of any reference gene will require normalization on log transformed data in data-raw/DATASET.R
-# TODO log transformation of all genes will need to occur in data-raw/DATASET.R
-# TODO enforce selection of only human or mouse subsets, no mixing or matching allowed
-#

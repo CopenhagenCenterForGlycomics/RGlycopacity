@@ -1,6 +1,6 @@
 Package: glycoCapacityPredictR
 Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Version: 0.0.1.0000
 Authors@R: 
     person(given = "Leo",
            family = "Dworkin",
@@ -18,6 +18,7 @@ Suggests:
     rmarkdown,
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
+Imports: Matrix, Seurat, SeuratObject, pbmcapply, edgeR
 Depends: 
     R (>= 2.10)
 Config/testthat/edition: 3

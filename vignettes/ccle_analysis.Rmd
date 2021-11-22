@@ -1,0 +1,156 @@
+---
+title: "hek_analysis"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{hek_analysis}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(glycoCapacityPredictR)
+```
+
+# loading bulk cancer cell line encyclopedia data 
+
+```{r load_bulk}
+
+ccle_raw_counts.dgeObj <- readRDS(system.file("extdata", "ccle_raw_counts.Rds", package = "glycoCapacityPredictR", mustWork = T))
+
+```
+
+```{r}
+
+ccle_log_counts.mat <- edgeR::cpm.DGEList(ccle_raw_counts.dgeObj)+1
+
+```
+
+```{r}
+
+rel_diff.mat <-
+  do.call(
+    cbind,
+    lapply(
+      data.frame(ccle_log_counts.mat),
+      normalise,
+      genes = row.names(ccle_log_counts.mat),
+      log_transform = T))
+rownames(rel_diff.mat) <-
+  rownames(ccle_log_counts.mat)
+
+```
+
+# computing intersect of bulk on bulk
+
+```{r}
+
+bulk_on_bulk_intersect.mat <- compute_intersects(rel_diff.mat, dynamic_ranges.char = 'bulk_ranges')
+
+```
+
+# computing intersect of bulk on single cell
+
+```{r}
+
+bulk_on_sc_intersect.mat <- compute_intersects(rel_diff.mat, dynamic_ranges.char = 'tabula_sapiens_ranges')
+
+```
+
+# loading 2700 pbmc cells from chromium 10x V2
+
+```{r load_sc}
+
+pbmck3k.seurat <- readRDS(system.file("extdata", "pbmc3k.Rds", package = "glycoCapacityPredictR", mustWork = T))
+
+```
+
+# computing cluster specific values from raw single cell counts
+
+## trimmed mean pseudobulks
+
+## cluster sizes
+
+## pseudopresences
+
+```{r}
+
+result.list <- compute_pseudobulk(pbmck3k.seurat)
+
+```
+
+# computing minimal expression cutoff for each clusters pseudobulks
+
+```{r}
+
+expression.mat <-
+  do.call(
+    cbind,
+    mapply(
+    expression_prediction, 
+    as.list(result.list$cluster_sizes.vec), 
+    data.frame(result.list$pseudobulks.sm, check.rows = F), 
+    SIMPLIFY = F))
+rownames(expression.mat) <- 
+  rownames(result.list$pseudobulks.sm)
+
+```
+
+# computing stability cutoff for each clusters pseudopresence
+
+```{r}
+
+pseudopresence.mat <-
+  lapply(
+    lapply(
+      mapply(
+        pseudopresence_prediction,
+        data.frame(result.list$pseudobulks.sm),
+        data.frame(result.list$pseudopresence.sm),
+        SIMPLIFY = F),
+      data.frame), as.matrix)
+
+rownames(pseudopresence.mat$pbmc3k) <- 
+  rownames(result.list$pseudobulks.sm)
+
+```
+
+# computing relative difference for each clusters pseudobulks
+
+```{r}
+
+rel_diff.mat <-
+  do.call(
+    cbind,
+    lapply(
+      data.frame(result.list$pseudobulks.sm),
+      normalise,
+      genes = row.names(result.list$pseudobulks.sm),
+      log_transform = T))
+rownames(rel_diff.mat) <-
+  rownames(result.list$pseudobulks.sm)
+
+```
+
+# computing intersect of single cell on bulk
+
+```{r}
+
+sc_on_bulk_intersect.mat <- compute_intersects(rel_diff.mat, dynamic_ranges.char = 'bulk_ranges')
+
+```
+
+# computing intersect of single cell on single cell
+
+```{r}
+
+sc_on_sc_intersect.mat <- compute_intersects(rel_diff.mat, dynamic_ranges.char = 'tabula_sapiens_ranges')
+
+```
+
