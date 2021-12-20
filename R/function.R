@@ -14,7 +14,7 @@
 #'@importFrom pbmcapply pbmclapply
 #'
 #'@export
-compute_pseudobulk <- function(obj.seurat) {
+calculatePseudobulks <- function(obj.seurat) {
 
   requireNamespace('Matrix')
 
@@ -104,8 +104,6 @@ compute_pseudobulk <- function(obj.seurat) {
 #'@examples
 #'
 #'@importFrom stats predict pt
-#'
-#'@export
 expression_prediction <- function(ncells, pseudobulk) {
 
   s <-
@@ -124,6 +122,34 @@ expression_prediction <- function(ncells, pseudobulk) {
 
 }
 
+#'@title single cell gene expression prediction wrapper
+#'
+#'@description predicted expression of a gene in a single cell cluster
+#'
+#'@param single_cell.list list of pseudobulk sparse matrix and vector of cluster sizes
+#'
+#'@return an n gene x k cluster matrix of pvalues corresponding to the probability that the gene is expressed in the cluster
+#'
+#'@examples
+#'
+#'@export
+predictMinimalExpression <- function(single_cell.list) {
+
+  expression.mat <-
+    do.call(
+      cbind,
+      mapply(
+        expression_prediction,
+        as.list(single_cell.list$cluster_sizes.vec),
+        data.frame(single_cell.list$pseudobulks.sm, check.rows = F),
+        SIMPLIFY = F))
+
+  rownames(expression.mat) <- rownames(single_cell.list$pseudobulks.sm)
+  colnames(expression.mat) <- colnames(single_cell.list$pseudobulks.sm)
+
+  expression.mat
+
+}
 
 #'@title single cell pseudopresence prediction
 #'
@@ -137,8 +163,6 @@ expression_prediction <- function(ncells, pseudobulk) {
 #'@examples
 #'
 #'@importFrom stats predict pt
-#'
-#'@export
 pseudopresence_prediction <- function(pseudobulk, pseudopresence = NULL) {
 
   mu_model.lm <- pseudopresence_model.lm$glycogene_mean_fit.lm
@@ -177,6 +201,47 @@ pseudopresence_prediction <- function(pseudobulk, pseudopresence = NULL) {
     pval = p)
 }
 
+#'@title single cell pseudopresence prediction wrapper
+#'
+#'@description predicted expression of pseudobulk stability in a single cell cluster
+#'
+#'@param single_cell.list list of pseudobulk and pseudopresence sparse matrices
+#'
+#'@return a list of matrices corresponding to  expected mean pseudopresence, expected var pseudopresence and stability pvalue
+#'
+#'@examples
+#'
+#'@export
+predictPseudopresenceStability <- function(single_cell.list) {
+
+  pseudopresence.list <-
+    mapply(
+      pseudopresence_prediction,
+      data.frame(single_cell.list$pseudobulks.sm),
+      data.frame(single_cell.list$pseudopresence.sm),
+      SIMPLIFY = F)
+
+  expected_mu.mat <- do.call(cbind, lapply(pseudopresence.list, `[[`, 1))
+  rownames(expected_mu.mat) <- rownames(single_cell.list$pseudobulks.sm)
+  colnames(expected_mu.mat) <- names(pseudopresence.list)
+
+  expected_var.mat <- do.call(cbind, lapply(pseudopresence.list, `[[`, 2))
+  rownames(expected_var.mat) <- rownames(single_cell.list$pseudobulks.sm)
+  colnames(expected_var.mat) <- names(pseudopresence.list)
+
+  pval.mat <- do.call(cbind, lapply(pseudopresence.list, `[[`, 3))
+  rownames(pval.mat) <- rownames(single_cell.list$pseudobulks.sm)
+  colnames(pval.mat) <- names(pseudopresence.list)
+
+  pseudopresence.list <- list(
+    expected_mu.mat = expected_mu.mat,
+    expected_var.mat = expected_var.mat,
+    pval.mat = pval.mat)
+
+  pseudopresence.list
+
+}
+
 #'@title reference gene normalisation
 #'
 #'@description normalising on a reference gene for downstream comparison of glycogene ranges of expression
@@ -188,11 +253,7 @@ pseudopresence_prediction <- function(pseudobulk, pseudopresence = NULL) {
 #'@return a data.frame of genes, annotations, and normalised counts
 #'
 #'@examples
-#'
-#'@importFrom stats setNames
-#'
-#'@export
-normalise <- function(
+seg_normalisation <- function(
   genes,
   values,
   log_transform = T) {
@@ -212,12 +273,122 @@ normalise <- function(
   values
 }
 
+#'@title reference gene normalisation wrapper
+#'
+#'@description normalising on a reference gene for downstream comparison of glycogene ranges of expression
+#'
+#'@param input.mat n gene x k sample matrix of suitable counts
+#'@param genes a named numeric vector of the counts to be transformed. default is rownames of input_mat
+#'@param log_transform boolean indicating if a natural log + 1 transform should be applied
+#'
+#'@return a data.frame of genes, annotations, and normalised counts
+#'
+#'@examples
+#'
+#'@export
+normaliseOnSEGs <- function(input.mat, genes = row.names(input.mat), log_transform = T) {
+
+  rel_diff.mat <-
+    do.call(
+      cbind,
+      lapply(
+        data.frame(input.mat),
+        seg_normalisation,
+        genes = genes,
+        log_transform = log_transform))
+
+  rownames(rel_diff.mat) <- rownames(input.mat)
+  rownames(rel_diff.mat) <- rownames(input.mat)
+
+  rel_diff.mat
+}
+
+#'@title compute clrs for a vector of values
+#'
+#'@description this function determines the clrs of a vector
+#'
+#'@param values a vector of values
+#'
+#'@return a vector of clrs
+#'
+#'@examples
+#'
+#'@importFrom compositions clr
+clr_transform <- function(values) { compositions::clr(values) }
+
+#'@title wrapper for computing clrs on test data
+#'
+#'@description this function determines the clrs of a gene in test data
+#'
+#'@param input.mat an n gene x k sample matrix of values
+#'
+#'@return the set of ranges computed from applying the specified quantiles to each gene in the test data
+#'
+#'@examples
+#'
+#'@export
+transformToCLR <- function(input.mat) {
+
+  clrs.mat <-
+    as.matrix(
+      do.call(
+        rbind,
+        lapply(
+          data.frame(t(input.mat)),
+          clr_transform)))
+
+  colnames(clrs.mat) <- colnames(input.mat)
+  rownames(clrs.mat) <- rownames(input.mat)
+
+  clrs.mat
+}
+
+#'@title compute quantiles for a vector of values
+#'
+#'@description this function determines the quantiles of a vector
+#'
+#'@param values a vector of values
+#'@param quantiles a vector of desired quantiles
+#'
+#'@return a vector of quantiles
+#'
+#'@examples
+range_generation <- function(values, quantiles) { quantile(x = values, probs = quantiles, type = 1, na.rm = T) }
+
+#'@title Predicting dynamic ranges in test data
+#'
+#'@description this function determines the ranges of a gene in test data
+#'
+#'@param input.mat an n gene x m sample matrix of values
+#'@param quantiles desired ranges to compute
+#'
+#'@return the set of ranges computed from applying the specified quantiles to each gene in the test data
+#'
+#'@examples
+#'
+#'@export
+getNormalisedRanges <- function(input.mat, quantiles = c(0.05, 0.1, 0.25, 0.75, 0.9, 0.95)) {
+
+  ranges.mat <-
+    as.matrix(
+      do.call(
+        rbind,
+        lapply(
+          data.frame(t(input.mat)),
+          range_generation,
+          quantiles = quantiles)))
+
+  colnames(ranges.mat) <- quantiles
+  rownames(ranges.mat) <- rownames(input.mat)
+
+  ranges.mat
+}
 
 #'@title Predicting glycosylation capacity in test data from reference data
 #'
 #'@description this function determines whether a gene is expressed in test data by leveraging reference data
 #'
-#'@param test_data an n gene x m sample matrix of values.
+#'@param input.mat an n gene x m sample matrix of values.
 #'@param dynamic_ranges.char character reference to a stored set of ranges
 #'
 #'@return the set of prediction statuses computed from applying the expression quantiles from the reference data to each sample in the test data
@@ -228,7 +399,7 @@ normalise <- function(
 #'@importFrom Matrix t rowSums
 #'
 #'@export
-compute_intersects <- function(test_data, dynamic_ranges.char) {
+calculateNormalisedIntersects <- function(input.mat, dynamic_ranges.char) {
 
   ## stop condition for empty arguements ----
   null_args <- names(Filter(Negate(isFALSE), eapply(environment(), is.null)))
@@ -236,7 +407,7 @@ compute_intersects <- function(test_data, dynamic_ranges.char) {
     stop(paste('The following arguments require an input value:', paste0(null_args, collapse = ','))) }
 
   ## stop condition for test_data ----
-  if(!is.matrix(test_data)) { stop('test_data must be an object of class matrix') }
+  if(!is.matrix(input.mat)) { stop('test_data must be an object of class matrix') }
 
   dynamic_ranges.char <-
     match.arg(
@@ -250,10 +421,10 @@ compute_intersects <- function(test_data, dynamic_ranges.char) {
         'panglao_musculus_known_ranges'))
 
   ## filtering datasets for retrieved genes ----
-  shared_genes <- intersect(unique(rownames(test_data)), unique(colnames(dynamic_ranges[[dynamic_ranges.char]]$expression_quantiles)))
+  shared_genes <- intersect(unique(rownames(input.mat)), unique(colnames(dynamic_ranges[[dynamic_ranges.char]]$expression_quantiles)))
 
   ## ensuring genes of reference_data and test_data are in order ----
-  test_data <- test_data[rownames(test_data) %in% shared_genes, , drop = F]
+  test_data <- input.mat[rownames(input.mat) %in% shared_genes, , drop = F]
   reference_data <- Matrix::t(dynamic_ranges[[dynamic_ranges.char]]$expression_quantiles[, shared_genes, drop = F])
   reference_data <- as.matrix(reference_data)
   reference_data <- reference_data[rownames(test_data), , drop = F]

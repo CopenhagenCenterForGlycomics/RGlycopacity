@@ -32,18 +32,27 @@ ccle_log_counts.mat <- edgeR::cpm.DGEList(ccle_raw_counts.dgeObj)+1
 
 ```
 
+# computing relative difference for each clusters pseudobulks
+
 ```{r}
 
-rel_diff.mat <-
-  do.call(
-    cbind,
-    lapply(
-      data.frame(ccle_log_counts.mat),
-      normalise,
-      genes = row.names(ccle_log_counts.mat),
-      log_transform = T))
-rownames(rel_diff.mat) <-
-  rownames(ccle_log_counts.mat)
+rel_diff.mat <- normaliseOnSEGs(ccle_log_counts.mat)
+
+```
+
+# computing ranges on relative difference 
+
+```{r}
+
+rel_diff_ranges.mat <- getNormalisedRanges(rel_diff.mat)
+
+```
+
+# computing clrs on relative difference
+
+```{r}
+
+clrs.mat <- transformToCLR(rel_diff.mat)
 
 ```
 
@@ -51,7 +60,7 @@ rownames(rel_diff.mat) <-
 
 ```{r}
 
-bulk_on_bulk_intersect.mat <- compute_intersects(rel_diff.mat, dynamic_ranges.char = 'bulk_ranges')
+bulk_on_bulk_intersect.mat <- calculateNormalisedIntersects(rel_diff.mat, dynamic_ranges.char = 'bulk_ranges')
 
 ```
 
@@ -59,7 +68,7 @@ bulk_on_bulk_intersect.mat <- compute_intersects(rel_diff.mat, dynamic_ranges.ch
 
 ```{r}
 
-bulk_on_sc_intersect.mat <- compute_intersects(rel_diff.mat, dynamic_ranges.char = 'tabula_sapiens_ranges')
+bulk_on_sc_intersect.mat <- calculateNormalisedIntersects(rel_diff.mat, dynamic_ranges.char = 'tabula_sapiens_ranges')
 
 ```
 
@@ -81,7 +90,7 @@ pbmck3k.seurat <- readRDS(system.file("extdata", "pbmc3k.Rds", package = "glycoC
 
 ```{r}
 
-result.list <- compute_pseudobulk(pbmck3k.seurat)
+result.list <- calculatePseudobulks(pbmck3k.seurat)
 
 ```
 
@@ -89,16 +98,7 @@ result.list <- compute_pseudobulk(pbmck3k.seurat)
 
 ```{r}
 
-expression.mat <-
-  do.call(
-    cbind,
-    mapply(
-    expression_prediction, 
-    as.list(result.list$cluster_sizes.vec), 
-    data.frame(result.list$pseudobulks.sm, check.rows = F), 
-    SIMPLIFY = F))
-rownames(expression.mat) <- 
-  rownames(result.list$pseudobulks.sm)
+expression.mat <- predictMinimalExpression(result.list)
 
 ```
 
@@ -106,18 +106,7 @@ rownames(expression.mat) <-
 
 ```{r}
 
-pseudopresence.mat <-
-  lapply(
-    lapply(
-      mapply(
-        pseudopresence_prediction,
-        data.frame(result.list$pseudobulks.sm),
-        data.frame(result.list$pseudopresence.sm),
-        SIMPLIFY = F),
-      data.frame), as.matrix)
-
-rownames(pseudopresence.mat$pbmc3k) <- 
-  rownames(result.list$pseudobulks.sm)
+pseudopresence.list <- predictPseudopresenceStability(result.list)
 
 ```
 
@@ -125,16 +114,23 @@ rownames(pseudopresence.mat$pbmc3k) <-
 
 ```{r}
 
-rel_diff.mat <-
-  do.call(
-    cbind,
-    lapply(
-      data.frame(result.list$pseudobulks.sm),
-      normalise,
-      genes = row.names(result.list$pseudobulks.sm),
-      log_transform = T))
-rownames(rel_diff.mat) <-
-  rownames(result.list$pseudobulks.sm)
+rel_diff.mat <- normaliseOnSEGs(result.list$pseudobulks.sm)
+
+```
+
+# computing ranges on relative difference 
+
+```{r}
+
+rel_diff_ranges.mat <- getNormalisedRanges(rel_diff.mat)
+
+```
+
+# computing clrs on relative difference
+
+```{r}
+
+clrs.mat <- transformToCLR(rel_diff.mat)
 
 ```
 
@@ -142,7 +138,7 @@ rownames(rel_diff.mat) <-
 
 ```{r}
 
-sc_on_bulk_intersect.mat <- compute_intersects(rel_diff.mat, dynamic_ranges.char = 'bulk_ranges')
+sc_on_bulk_intersect.mat <- calculateNormalisedIntersects(rel_diff.mat, dynamic_ranges.char = 'bulk_ranges')
 
 ```
 
@@ -150,7 +146,7 @@ sc_on_bulk_intersect.mat <- compute_intersects(rel_diff.mat, dynamic_ranges.char
 
 ```{r}
 
-sc_on_sc_intersect.mat <- compute_intersects(rel_diff.mat, dynamic_ranges.char = 'tabula_sapiens_ranges')
+sc_on_sc_intersect.mat <- calculateNormalisedIntersects(rel_diff.mat, dynamic_ranges.char = 'tabula_sapiens_ranges')
 
 ```
 
