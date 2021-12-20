@@ -1,4 +1,4 @@
 library(testthat)
-library(glycoCapacityPredictR)
+library(RGlycopacity)
 
-test_check("glycoCapacityPredictR")
+test_check("RGlycopacity")

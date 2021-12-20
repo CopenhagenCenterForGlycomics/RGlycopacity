@@ -15,14 +15,14 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(glycoCapacityPredictR)
+library(RGlycopacity)
 ```
 
 # loading bulk cancer cell line encyclopedia data 
 
 ```{r load_bulk}
 
-ccle_raw_counts.dgeObj <- readRDS(system.file("extdata", "ccle_raw_counts.Rds", package = "glycoCapacityPredictR", mustWork = T))
+ccle_raw_counts.dgeObj <- readRDS(system.file("extdata", "ccle_raw_counts.Rds", package = "RGlycopacity", mustWork = T))
 
 ```
 
@@ -76,7 +76,7 @@ bulk_on_sc_intersect.mat <- calculateNormalisedIntersects(rel_diff.mat, dynamic_
 
 ```{r load_sc}
 
-pbmck3k.seurat <- readRDS(system.file("extdata", "pbmc3k.Rds", package = "glycoCapacityPredictR", mustWork = T))
+pbmck3k.seurat <- readRDS(system.file("extdata", "pbmc3k.Rds", package = "RGlycopacity", mustWork = T))
 
 ```
 
