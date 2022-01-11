@@ -1,0 +1,55 @@
+Group Name
+Initiation:GPI anchor
+Initiation:Glycosphingolipid
+Initiation:Protein N-linked
+Initiation:Wide specificity
+Initiation:Protein O-GalNAc
+Initiation:Protein O-Fuc (EGF)
+Initiation:Protein O-Fuc (TSR)
+Initiation:Protein O-GlcNAc (Extracellular)
+Initiation:Protein O-Man
+Initiation:Protein C-Mannosylation
+Initiation:Protein O-Glc (EGF)
+Initiation:Proteoglycan
+Initiation:Collagen
+Initiation:Protein O-GlcNAc
+Core extension:GPI anchor
+Core extension:Glycosphingolipid
+Core extension:Protein N-linked
+Branching:Protein N-linked
+Core extension:Protein O-GalNAc
+Branching:Protein O-GalNAc
+Core extension:Protein O-Fuc (EGF)
+Core extension:Protein O-Fuc (TSR)
+Core extension:Protein O-Man
+Branching:Protein O-Man
+Core extension:Protein O-Man (Dystroglycan)
+Core extension repeat:Protein O-Man (Dystroglycan)
+Core extension:Protein O-Glc (EGF)
+Core extension:Proteoglycan (CS)
+Core extension repeat:Proteoglycan (CS)
+Core extension:Proteoglycan
+Core extension repeat:Proteoglycan (HS)
+Core Extension:Collagen
+Elongation:Wide specificity
+Capping:Wide specificity
+Capping:Proteoglycan (CS)
+Capping:Proteoglycan (HS)
+Capping Sulfo:Glycosphingolipid
+Capping Sulfo:Protein N-linked
+Capping Sulfo:Protein O-linked
+Capping Sulfo:Proteoglycan
+Capping Sulfo:Wide specificity
+Capping Sulfo:Proteoglycan (CS)
+Capping Sulfo:Proteoglycan (HS)
+Degradation:Protein O-GlcNAc
+Detoxification:Glucuronoside
+Glycogen:Glycogen
+Glycogen:Glycogen phosphorylase
+Glycogen:Glycogenin
+Hyaluronan:Hyaluronan
+Inactive:Inactive
+Pseudogene:Pseudogene
+QC:QC
+Unknown:Unknown
+Core degradation:Protein N-linked

@@ -1,0 +1,6 @@
+generate_package_data = function() {
+  glycogenome_ordering = read.delim('data/glycogenome_ordering.tsv',header=T)
+  pathway_ordering = read.delim('data/pathway_ordering.tsv',header=T)
+  glycogenome_ordering$Group.Name = factor(glycogenome_ordering$Group.Name, pathway_ordering$Group.Name)
+  usethis::use_data(glycogenome_ordering,overwrite=T)
+}

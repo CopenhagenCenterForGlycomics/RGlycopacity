@@ -1,0 +1,363 @@
+HGNC	Group Name
+FUT8	Branching:Protein N-linked
+FUT8	Branching:Protein N-linked
+MGAT2	Branching:Protein N-linked
+MGAT3	Branching:Protein N-linked
+MGAT4A	Branching:Protein N-linked
+MGAT4B	Branching:Protein N-linked
+MGAT4C	Branching:Protein N-linked
+MGAT4D	Branching:Protein N-linked
+MGAT5	Branching:Protein N-linked
+GCNT3	Branching:Protein O-GalNAc
+GCNT3	Branching:Protein O-GalNAc
+GCNT4	Branching:Protein O-GalNAc
+GCNT4	Branching:Protein O-GalNAc
+MGAT5B	Branching:Protein O-Man
+DSE	Capping:Proteoglycan (CS)
+DSEL	Capping:Proteoglycan (CS)
+GLCE	Capping:Proteoglycan (HS)
+A4GNT	Capping:Wide specificity
+ABO	Capping:Wide specificity
+ABO	Capping:Wide specificity
+FUT1	Capping:Wide specificity
+FUT1	Capping:Wide specificity
+FUT2	Capping:Wide specificity
+FUT2	Capping:Wide specificity
+FUT3	Capping:Wide specificity
+FUT3	Capping:Wide specificity
+FUT4	Capping:Wide specificity
+FUT5	Capping:Wide specificity
+FUT5	Capping:Wide specificity
+FUT6	Capping:Wide specificity
+FUT7	Capping:Wide specificity
+FUT9	Capping:Wide specificity
+FUT10	Capping:Wide specificity
+FUT11	Capping:Wide specificity
+ST3GAL1	Capping:Wide specificity
+ST3GAL1	Capping:Wide specificity
+ST3GAL2	Capping:Wide specificity
+ST3GAL2	Capping:Wide specificity
+ST3GAL3	Capping:Wide specificity
+ST3GAL3	Capping:Wide specificity
+ST3GAL4	Capping:Wide specificity
+ST3GAL4	Capping:Wide specificity
+ST3GAL5	Capping:Wide specificity
+ST3GAL5	Capping:Wide specificity
+ST3GAL6	Capping:Wide specificity
+ST3GAL6	Capping:Wide specificity
+ST6GAL1	Capping:Wide specificity
+ST6GAL1	Capping:Wide specificity
+ST6GAL2	Capping:Wide specificity
+ST6GAL2	Capping:Wide specificity
+ST6GALNAC1	Capping:Wide specificity
+ST6GALNAC1	Capping:Wide specificity
+ST6GALNAC2	Capping:Wide specificity
+ST6GALNAC2	Capping:Wide specificity
+ST6GALNAC3	Capping:Wide specificity
+ST6GALNAC3	Capping:Wide specificity
+ST6GALNAC4	Capping:Wide specificity
+ST6GALNAC4	Capping:Wide specificity
+ST6GALNAC5	Capping:Wide specificity
+ST6GALNAC5	Capping:Wide specificity
+ST6GALNAC6	Capping:Wide specificity
+ST6GALNAC6	Capping:Wide specificity
+ST8SIA1	Capping:Wide specificity
+ST8SIA2	Capping:Wide specificity
+ST8SIA3	Capping:Wide specificity
+ST8SIA4	Capping:Wide specificity
+ST8SIA5	Capping:Wide specificity
+ST8SIA6	Capping:Wide specificity
+GAL3ST1	Capping Sulfo:Glycosphingolipid
+GAL3ST1	Capping Sulfo:Glycosphingolipid
+GAL3ST4	Capping Sulfo:Protein O-linked
+CHST10	Capping Sulfo:Proteoglycan
+CHST11	Capping Sulfo:Proteoglycan (CS)
+CHST12	Capping Sulfo:Proteoglycan (CS)
+CHST13	Capping Sulfo:Proteoglycan (CS)
+CHST14	Capping Sulfo:Proteoglycan (CS)
+CHST15	Capping Sulfo:Proteoglycan (CS)
+CHST15	Capping Sulfo:Proteoglycan (CS)
+CHST15	Capping Sulfo:Proteoglycan (CS)
+CHST15	Capping Sulfo:Proteoglycan (CS)
+CHST3	Capping Sulfo:Proteoglycan (CS)
+UST	Capping Sulfo:Proteoglycan (CS)
+UST	Capping Sulfo:Proteoglycan (CS)
+HS2ST1	Capping Sulfo:Proteoglycan (HS)
+HS2ST1	Capping Sulfo:Proteoglycan (HS)
+HS3ST1	Capping Sulfo:Proteoglycan (HS)
+HS3ST1	Capping Sulfo:Proteoglycan (HS)
+HS3ST2	Capping Sulfo:Proteoglycan (HS)
+HS3ST2	Capping Sulfo:Proteoglycan (HS)
+HS3ST3A1	Capping Sulfo:Proteoglycan (HS)
+HS3ST3A1	Capping Sulfo:Proteoglycan (HS)
+HS3ST3B1	Capping Sulfo:Proteoglycan (HS)
+HS3ST3B1	Capping Sulfo:Proteoglycan (HS)
+HS3ST4	Capping Sulfo:Proteoglycan (HS)
+HS3ST4	Capping Sulfo:Proteoglycan (HS)
+HS3ST5	Capping Sulfo:Proteoglycan (HS)
+HS3ST5	Capping Sulfo:Proteoglycan (HS)
+HS3ST6	Capping Sulfo:Proteoglycan (HS)
+HS3ST6	Capping Sulfo:Proteoglycan (HS)
+HS6ST1	Capping Sulfo:Proteoglycan (HS)
+HS6ST1	Capping Sulfo:Proteoglycan (HS)
+HS6ST2	Capping Sulfo:Proteoglycan (HS)
+HS6ST2	Capping Sulfo:Proteoglycan (HS)
+HS6ST3	Capping Sulfo:Proteoglycan (HS)
+HS6ST3	Capping Sulfo:Proteoglycan (HS)
+NDST1	Capping Sulfo:Proteoglycan (HS)
+NDST1	Capping Sulfo:Proteoglycan (HS)
+NDST2	Capping Sulfo:Proteoglycan (HS)
+NDST2	Capping Sulfo:Proteoglycan (HS)
+NDST3	Capping Sulfo:Proteoglycan (HS)
+NDST3	Capping Sulfo:Proteoglycan (HS)
+NDST4	Capping Sulfo:Proteoglycan (HS)
+NDST4	Capping Sulfo:Proteoglycan (HS)
+CHST1	Capping Sulfo:Wide specificity
+CHST2	Capping Sulfo:Wide specificity
+CHST2	Capping Sulfo:Wide specificity
+CHST2	Capping Sulfo:Wide specificity
+CHST2	Capping Sulfo:Wide specificity
+CHST2	Capping Sulfo:Wide specificity
+CHST2	Capping Sulfo:Wide specificity
+CHST3	Capping Sulfo:Wide specificity
+CHST4	Capping Sulfo:Wide specificity
+CHST4	Capping Sulfo:Wide specificity
+CHST4	Capping Sulfo:Wide specificity
+CHST4	Capping Sulfo:Wide specificity
+CHST4	Capping Sulfo:Wide specificity
+CHST4	Capping Sulfo:Wide specificity
+CHST5	Capping Sulfo:Wide specificity
+CHST5	Capping Sulfo:Wide specificity
+CHST5	Capping Sulfo:Wide specificity
+CHST5	Capping Sulfo:Wide specificity
+CHST5	Capping Sulfo:Wide specificity
+CHST5	Capping Sulfo:Wide specificity
+CHST5	Capping Sulfo:Wide specificity
+CHST6	Capping Sulfo:Wide specificity
+CHST6	Capping Sulfo:Wide specificity
+CHST6	Capping Sulfo:Wide specificity
+CHST6	Capping Sulfo:Wide specificity
+CHST6	Capping Sulfo:Wide specificity
+CHST6	Capping Sulfo:Wide specificity
+CHST6	Capping Sulfo:Wide specificity
+CHST7	Capping Sulfo:Wide specificity
+CHST7	Capping Sulfo:Wide specificity
+CHST7	Capping Sulfo:Wide specificity
+CHST7	Capping Sulfo:Wide specificity
+CHST7	Capping Sulfo:Wide specificity
+CHST7	Capping Sulfo:Wide specificity
+CHST7	Capping Sulfo:Wide specificity
+CHST8	Capping Sulfo:Wide specificity
+CHST9	Capping Sulfo:Wide specificity
+CHST10	Capping Sulfo:Wide specificity
+GAL3ST2	Capping Sulfo:Wide specificity
+GAL3ST3	Capping Sulfo:Wide specificity
+MAN1A1	Core degradation:Protein N-linked
+MAN1A2	Core degradation:Protein N-linked
+MAN1B1	Core degradation:Protein N-linked
+MAN1C1	Core degradation:Protein N-linked
+A4GALT	Core extension:Glycosphingolipid
+B3GALNT1	Core extension:Glycosphingolipid
+B3GNT5	Core extension:Glycosphingolipid
+B4GALNT1	Core extension:Glycosphingolipid
+B4GALT5	Core extension:Glycosphingolipid
+B4GALT6	Core extension:Glycosphingolipid
+PIGB	Core extension:GPI anchor
+PIGG	Core extension:GPI anchor
+PIGL	Core extension:GPI anchor
+PIGM	Core extension:GPI anchor
+PIGN	Core extension:GPI anchor
+PIGO	Core extension:GPI anchor
+PIGO	Core extension:GPI anchor
+PIGV	Core extension:GPI anchor
+PIGW	Core extension:GPI anchor
+PIGZ	Core extension:GPI anchor
+MGAT1	Core extension:Protein N-linked
+MGAT1	Core extension:Protein N-linked
+LFNG	Core extension:Protein O-Fuc (EGF)
+MFNG	Core extension:Protein O-Fuc (EGF)
+RFNG	Core extension:Protein O-Fuc (EGF)
+B3GLCT	Core extension:Protein O-Fuc (TSR)
+B3GNT6	Core extension:Protein O-GalNAc
+C1GALT1	Core extension:Protein O-GalNAc
+C1GALT1C1	Core extension:Protein O-GalNAc
+GCNT1	Branching:Protein O-GalNAc
+GXYLT1	Core extension:Protein O-Glc (EGF)
+GXYLT2	Core extension:Protein O-Glc (EGF)
+XXYLT1	Core extension:Protein O-Glc (EGF)
+POMGNT1	Core extension:Protein O-Man
+B3GALNT2	Core extension:Protein O-Man (Dystroglycan)
+B4GAT1	Core extension:Protein O-Man (Dystroglycan)
+FKRP	Core extension:Protein O-Man (Dystroglycan)
+FKRP	Core extension:Protein O-Man (Dystroglycan)
+FKTN	Core extension:Protein O-Man (Dystroglycan)
+FKTN	Core extension:Protein O-Man (Dystroglycan)
+POMGNT2	Core extension:Protein O-Man (Dystroglycan)
+POMK	Core extension:Protein O-Man (Dystroglycan)
+RXYLT1	Core extension:Protein O-Man (Dystroglycan)
+B3GALT6	Core extension:Proteoglycan
+B3GAT3	Core extension:Proteoglycan
+B4GALT7	Core extension:Proteoglycan
+CSGALNACT1	Core extension:Proteoglycan (CS)
+CSGALNACT2	Core extension:Proteoglycan (CS)
+LARGE1	Core extension repeat:Protein O-Man (Dystroglycan)
+LARGE1	Core extension repeat:Protein O-Man (Dystroglycan)
+LARGE1	Core extension repeat:Protein O-Man (Dystroglycan)
+LARGE1	Core extension repeat:Protein O-Man (Dystroglycan)
+LARGE2	Core extension repeat:Protein O-Man (Dystroglycan)
+LARGE2	Core extension repeat:Protein O-Man (Dystroglycan)
+LARGE2	Core extension repeat:Protein O-Man (Dystroglycan)
+LARGE2	Core extension repeat:Protein O-Man (Dystroglycan)
+CHPF	Core extension repeat:Proteoglycan (CS)
+CHPF	Core extension repeat:Proteoglycan (CS)
+CHPF2	Core extension repeat:Proteoglycan (CS)
+CHSY1	Core extension repeat:Proteoglycan (CS)
+CHSY1	Core extension repeat:Proteoglycan (CS)
+CHSY3	Core extension repeat:Proteoglycan (CS)
+CHSY3	Core extension repeat:Proteoglycan (CS)
+EXT1	Core extension repeat:Proteoglycan (HS)
+EXT1	Core extension repeat:Proteoglycan (HS)
+EXT1	Core extension repeat:Proteoglycan (HS)
+EXT2	Core extension repeat:Proteoglycan (HS)
+EXT2	Core extension repeat:Proteoglycan (HS)
+EXT2	Core extension repeat:Proteoglycan (HS)
+EXTL1	Core extension repeat:Proteoglycan (HS)
+EXTL2	Core extension repeat:Proteoglycan (HS)
+EXTL2	Core extension repeat:Proteoglycan (HS)
+EXTL3	Core extension repeat:Proteoglycan (HS)
+MGEA5	Degradation:Protein O-GlcNAc
+UGT1A1	Detoxification:Glucuronoside
+UGT1A3	Detoxification:Glucuronoside
+UGT1A4	Detoxification:Glucuronoside
+UGT1A5	Detoxification:Glucuronoside
+UGT1A6	Detoxification:Glucuronoside
+UGT1A7	Detoxification:Glucuronoside
+UGT1A8	Detoxification:Glucuronoside
+UGT1A9	Detoxification:Glucuronoside
+UGT2A1	Detoxification:Glucuronoside
+UGT2A3	Detoxification:Glucuronoside
+UGT2B4	Detoxification:Glucuronoside
+UGT2B4	Detoxification:Glucuronoside
+UGT2B7	Detoxification:Glucuronoside
+UGT2B7	Detoxification:Glucuronoside
+UGT2B10	Detoxification:Glucuronoside
+UGT2B11	Detoxification:Glucuronoside
+UGT2B15	Detoxification:Glucuronoside
+UGT2B17	Detoxification:Glucuronoside
+UGT2B28	Detoxification:Glucuronoside
+UGT3A1	Detoxification:Glucuronoside
+UGT3A2	Detoxification:Glucuronoside
+PLOD3	Core extension:Collagen
+B3GALT4	Core extension:Glycosphingolipid
+PGAP4	Core extension:GPI anchor
+B3GALT1	Elongation:Wide specificity
+B3GALT2	Elongation:Wide specificity
+B3GALT5	Elongation:Wide specificity
+B3GAT1	Capping:Wide specificity
+B3GAT2	Capping:Wide specificity
+B3GNT2	Elongation:Wide specificity
+B3GNT3	Elongation:Wide specificity
+B3GNT4	Elongation:Wide specificity
+B3GNT7	Elongation:Wide specificity
+B3GNT8	Elongation:Wide specificity
+B3GNT9	Elongation:Wide specificity
+B4GALNT2	Capping:Wide specificity
+B4GALNT3	Elongation:Wide specificity
+B4GALNT4	Elongation:Wide specificity
+B4GALT1	Elongation:Wide specificity
+B4GALT2	Elongation:Wide specificity
+B4GALT3	Elongation:Wide specificity
+B4GALT4	Elongation:Wide specificity
+GCNT2	Elongation:Wide specificity
+GCNT7	Elongation:Wide specificity
+GYS1	Glycogen:Glycogen
+GYS2	Glycogen:Glycogen
+PYGB	Glycogen:Glycogen phosphorylase
+PYGL	Glycogen:Glycogen phosphorylase
+PYGM	Glycogen:Glycogen phosphorylase
+GYG1	Glycogen:Glycogenin
+GYG2	Glycogen:Glycogenin
+HAS1	Hyaluronan:Hyaluronan
+HAS2	Hyaluronan:Hyaluronan
+HAS3	Hyaluronan:Hyaluronan
+A3GALT2	Inactive:Inactive
+GBGT1	Inactive:Inactive
+COLGALT1	Initiation:Collagen
+COLGALT2	Initiation:Collagen
+UGCG	Initiation:Glycosphingolipid
+UGT8	Initiation:Glycosphingolipid
+PIGA	Initiation:GPI anchor
+DPY19L1	Initiation:Protein C-Mannosylation
+DPY19L2	Initiation:Protein C-Mannosylation
+DPY19L3	Initiation:Protein C-Mannosylation
+DPY19L4	Initiation:Protein C-Mannosylation
+ALG1	Initiation:Protein N-linked
+ALG2	Initiation:Protein N-linked
+ALG2	Initiation:Protein N-linked
+ALG3	Initiation:Protein N-linked
+ALG5	Initiation:Protein N-linked
+ALG6	Initiation:Protein N-linked
+ALG8	Initiation:Protein N-linked
+ALG9	Initiation:Protein N-linked
+ALG9	Initiation:Protein N-linked
+ALG10	Initiation:Protein N-linked
+ALG10B	Initiation:Protein N-linked
+ALG11	Initiation:Protein N-linked
+ALG11	Initiation:Protein N-linked
+ALG12	Initiation:Protein N-linked
+ALG13	Initiation:Protein N-linked
+ALG14	Initiation:Protein N-linked
+DPAGT1	Initiation:Protein N-linked
+STT3A	Initiation:Protein N-linked
+STT3B	Initiation:Protein N-linked
+POFUT1	Initiation:Protein O-Fuc (EGF)
+POFUT2	Initiation:Protein O-Fuc (EGF)
+POFUT2	Initiation:Protein O-Fuc (TSR)
+GALNT1	Initiation:Protein O-GalNAc
+GALNT2	Initiation:Protein O-GalNAc
+GALNT3	Initiation:Protein O-GalNAc
+GALNT4	Initiation:Protein O-GalNAc
+GALNT5	Initiation:Protein O-GalNAc
+GALNT6	Initiation:Protein O-GalNAc
+GALNT7	Initiation:Protein O-GalNAc
+GALNT8	Initiation:Protein O-GalNAc
+GALNT9	Initiation:Protein O-GalNAc
+GALNT10	Initiation:Protein O-GalNAc
+GALNT11	Initiation:Protein O-GalNAc
+GALNT12	Initiation:Protein O-GalNAc
+GALNT13	Initiation:Protein O-GalNAc
+GALNT14	Initiation:Protein O-GalNAc
+GALNT15	Initiation:Protein O-GalNAc
+GALNT16	Initiation:Protein O-GalNAc
+GALNT17	Initiation:Protein O-GalNAc
+GALNT18	Initiation:Protein O-GalNAc
+GALNTL5	Initiation:Protein O-GalNAc
+GALNTL6	Initiation:Protein O-GalNAc
+POGLUT1	Initiation:Protein O-Glc (EGF)
+POGLUT2	Initiation:Protein O-Glc (EGF)
+POGLUT3	Initiation:Protein O-Glc (EGF)
+OGT	Initiation:Protein O-GlcNAc
+EOGT	Initiation:Protein O-GlcNAc (Extracellular)
+POMT1	Initiation:Protein O-Man
+POMT2	Initiation:Protein O-Man
+TMTC1	Initiation:Protein O-Man
+TMTC2	Initiation:Protein O-Man
+TMTC3	Initiation:Protein O-Man
+TMTC4	Initiation:Protein O-Man
+XYLT1	Initiation:Proteoglycan
+XYLT2	Initiation:Proteoglycan
+DPM1	Initiation:Wide specificity
+GCNT2P	Pseudogene:Pseudogene
+GGTA1P	Pseudogene:Pseudogene
+MGAT4EP	Pseudogene:Pseudogene
+UGGT1	QC:QC
+UGGT2	QC:QC
+ALG1L	Unknown:Unknown
+ALG1L2	Unknown:Unknown
+B3GNTL1	Unknown:Unknown
+CERCAM	Unknown:Unknown
+GLT1D1	Unknown:Unknown
+GLT6D1	Unknown:Unknown
+GLT8D1	Unknown:Unknown
+GLT8D2	Unknown:Unknown
+GTDC1	Unknown:Unknown
