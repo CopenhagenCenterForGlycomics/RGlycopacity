@@ -16,9 +16,13 @@ RoxygenNote: 7.1.1
 Suggests: 
     knitr,
     rmarkdown,
+    Seurat,
+    SeuratObject,
+    pbmcapply,
+    edgeR,
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
-Imports: Matrix, Seurat, SeuratObject, pbmcapply, edgeR, compositions
+Imports: Matrix, compositions
 Depends: 
     R (>= 2.10)
 Config/testthat/edition: 3

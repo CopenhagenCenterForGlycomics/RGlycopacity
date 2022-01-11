@@ -8,13 +8,18 @@
 #'
 #'@examples
 #'
-#'@importFrom Seurat NormalizeData GetAssayData
-#'@importFrom SeuratObject Idents as.sparse WhichCells
 #'@importFrom Matrix t sparseVector rowMeans rowSums
-#'@importFrom pbmcapply pbmclapply
 #'
 #'@export
 calculatePseudobulks <- function(obj.seurat) {
+
+  if (!requireNamespace('Seurat',quietly=TRUE)) {
+    stop('Seurat package is not installed')
+  }
+
+  if (!requireNamespace('pbmclapply',quietly=TRUE)) {
+    stop('pbmclapply package is not installed')
+  }
 
   requireNamespace('Matrix')
 
