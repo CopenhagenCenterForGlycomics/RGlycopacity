@@ -87,13 +87,13 @@ FacetGlycogenome <- ggplot2::ggproto("FacetGlycogenome", ggplot2::FacetGrid,
     drawn$layout[grepl('strip-l',drawn$layout$name),]$clip = 'off'
 
     drawn = gtable::gtable_add_cols(drawn, unit(1, "cm"), 0)
-
+    row_scale_factor = max(drawn$layout[grepl('axis-l',drawn$layout$name),'b'])/max(pathways_indices)
     apply(cbind(pathways_indices,rownames(pathways_indices)), 1, function(run) {
       label = grid::textGrob(run[3],rot=90)
       line = grid::linesGrob(x = unit(c(0.75, 0.75), "npc"),
           y = unit(c(0.01, 0.99), "npc"),gp = grid::gpar(color = "#00000000",lwd=2))
       title = grid::grobTree(label,line)
-      drawn <<- gtable::gtable_add_grob(drawn,grobs = title,t =as.numeric(run[1])*2,b=as.numeric(run[2])*2,l=1,r=1)
+      drawn <<- gtable::gtable_add_grob(drawn,grobs = title,t=as.numeric(run[1])*row_scale_factor,b=as.numeric(run[2])*row_scale_factor,l=1,r=1)
     })
 
     return(drawn)
