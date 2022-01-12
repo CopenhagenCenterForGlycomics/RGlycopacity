@@ -17,6 +17,7 @@ Suggests:
     ggplot2,
     knitr,
     rmarkdown,
+    ggsugar,
     Seurat,
     SeuratObject,
     pbmcapply,
