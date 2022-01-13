@@ -2,8 +2,8 @@
 test <- function() {
   allgenes = unique(glycogenome_ordering$HGNC)
   allgenes = sample(allgenes,30)
-  #ggplot(data.frame(gene=allgenes,baz=sample(c('a','b'),length(allgenes),T),x=rnorm(length(allgenes),10,0.1)),aes(x,y=gene))+geom_point()+facet_glycogenome(genes=vars(gene))
-  ggplot(data.frame(gene=rep(allgenes,3),baz=sample(c('a','b'),3*length(allgenes),T),x=rnorm(3*length(allgenes),10,0.1)),aes(x))+geom_histogram()+facet_glycogenome(genes=vars(gene))
+  ggplot(data.frame(gene=allgenes,baz=sample(c('a','b'),length(allgenes),T),x=rnorm(length(allgenes),10,0.1)),aes(x,y=gene))+geom_point()+facet_glycogenome(genes=vars(gene),scales="free")
+  #ggplot(data.frame(gene=rep(allgenes,3),baz=sample(c('a','b'),3*length(allgenes),T),x=rnorm(3*length(allgenes),10,0.1)),aes(x))+geom_histogram()+facet_glycogenome(genes=vars(gene),cols=vars(baz),scales="free_x")
 }
 
 rle_strings = function(strings) {
@@ -63,7 +63,7 @@ FacetGlycogenome <- ggplot2::ggproto("FacetGlycogenome", ggplot2::FacetGrid,
   },
   draw_panels = function(panels, layout, x_scales, y_scales, ranges, coord, data, theme, params) {
     theme = theme + theme(panel.spacing.x = unit(0.1,"lines"),
-         panel.spacing.y = unit(0.1,"lines"),
+         panel.spacing.y = unit(0,"lines"),
          strip.background.x = element_rect(size=1),
          strip.placement = "outside",
          strip.text.x = element_text(color = "black", face = "bold"),
@@ -75,15 +75,14 @@ FacetGlycogenome <- ggplot2::ggproto("FacetGlycogenome", ggplot2::FacetGrid,
     params$rows = list(glycogene_pathway=quo(glycogene_pathway))
 
     drawn = ggplot2::FacetGrid$draw_panels(panels, layout, x_scales, y_scales, ranges, coord, data, theme, params)
-    label_widths = lapply(drawn$grobs[which(grepl('axis-l',drawn$layout$name))], grid::grobWidth)
 
     used_pathways = unique(layout[,c('ROW','glycogene_pathway')])[,2]
 
     pathways_indices = rle_strings(stringr::str_replace(as.character(layout$glycogene_pathway),":.*",""))
 
+    label_widths = list(drawn$widths[3])
 
-
-    drawn$grobs[grepl('strip-l',drawn$layout$name)] = lapply(used_pathways, function(x) generate_pathway_element(x,extra_width=label_widths[[1]]))
+    drawn$grobs[grepl('strip-l',drawn$layout$name)] = lapply(used_pathways, function(x) generate_pathway_element(x,extra_width=label_widths[[1]], icon_size= unit(2*ggplot2::calc_element("axis.text.y",theme_minimal())$size,"pt")))
     drawn$layout[grepl('strip-l',drawn$layout$name),]$clip = 'off'
 
     drawn = gtable::gtable_add_cols(drawn, unit(1, "cm"), 0)

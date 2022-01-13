@@ -1,5 +1,5 @@
 
-generate_pathway_element <- function(label,extra_width=grid::unit(0,"npc")) {
+generate_pathway_element <- function(label,extra_width=grid::unit(0,"npc"),icon_size=unit(12,"pt")) {
 
 
   colours = RGlycopacity::pathway_colours
@@ -14,7 +14,7 @@ generate_pathway_element <- function(label,extra_width=grid::unit(0,"npc")) {
     return(grid::nullGrob())
   }
 
-  shade = NULL
+  shade = "#ffffff00"
   if (pathway_class != "Initiation") {
     shade = shade_lookup[pathway]
   }
@@ -23,9 +23,9 @@ generate_pathway_element <- function(label,extra_width=grid::unit(0,"npc")) {
     pathway_strip = grid::rectGrob(grid::unit(0,"npc"), grid::unit(0.5,"npc"), grid::unit(0.5,"npc"), grid::unit(1,"npc"), just=c(0,0.5), gp = grid::gpar(fill=bar_lookup[pathway],lwd=1), name="path_strip")
   }
 
-  min_shade_width = unit(0.5,"cm")
+  min_shade_width = icon_size
 
-  pathway_shade = grid::rectGrob(grid::unit(0.5,"npc"), grid::unit(0.5,"npc"), min_shade_width + extra_width , grid::unit(1,"npc"), just=c(0,0.5), gp = grid::gpar(fill=shade,lwd=0), name="path_shade")
+  pathway_shade = grid::rectGrob(grid::unit(0,"npc"), grid::unit(0.5,"npc"), grid::unit(0.5,"npc") + min_shade_width + extra_width , grid::unit(1,"npc"), just=c(0,0.5), gp = grid::gpar(fill=shade,lwd=0), name="path_shade")
 
   sugar_grob = grid::nullGrob()
   if (requireNamespace('ggsugar',quietly=TRUE)) {
