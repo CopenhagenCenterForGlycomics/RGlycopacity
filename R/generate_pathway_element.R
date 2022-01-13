@@ -1,7 +1,9 @@
 
 generate_pathway_element <- function(label,extra_width=grid::unit(0,"npc")) {
 
-  colours = read.delim('data/pathway_colours.tsv',header=T,comment.char='',na.strings=c(''))
+
+  colours = RGlycopacity::pathway_colours
+
   bar_lookup = with(colours,setNames(bar,pathway))
   shade_lookup = with(colours,setNames(shade,pathway))
   shape_lookup = with(colours,setNames(sugar,pathway))
