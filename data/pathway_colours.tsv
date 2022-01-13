@@ -1,28 +1,28 @@
 pathway	sugar	bar	shade
-Protein N-linked	glcnac	blue	#d4e6f6
-Protein O-GalNAc	galnac	yellow	#fcf4e0
-Protein O-Man	man	green	#dfe6d2
-Proteoglycan (CS)	xyl	orange	#fbf1d6
-Proteoglycan (HS)	xyl	orange	#fbf1d6
+Protein N-linked	glcnac	#0090BC	#d4e6f6
+Protein O-GalNAc	galnac	#FFD400	#fcf4e0
+Protein O-Man	man	#00A651	#dfe6d2
+Proteoglycan (CS)	xyl	#F47920	#fbf1d6
+Proteoglycan (HS)	xyl	#F47920	#fbf1d6
 Wide specificity			#f5f5f2
 Glycosphingolipid	glc	grey	#ede9ec
 Protein O-linked			
-Proteoglycan	xyl	orange	#fbf1d6
-GPI anchor	glcn	blue	#ede9ec
-Protein O-Fuc (EGF)	fuc	red	#f2e0da
-Protein O-Fuc (TSR)	fuc	red	#f2e0da
-Protein O-Glc (EGF)	glc	blue	#d4e6f6
-Protein O-Man (Dystroglycan)	man	green	#dfe6d2
-Protein O-GlcNAc	glcnac	blue	#d4e6f6
+Proteoglycan	xyl	#F47920	#fbf1d6
+GPI anchor	glcn	#0090BC	#ede9ec
+Protein O-Fuc (EGF)	fuc	#ED1C24	#f2e0da
+Protein O-Fuc (TSR)	fuc	#ED1C24	#f2e0da
+Protein O-Glc (EGF)	glc	#0090BC	#d4e6f6
+Protein O-Man (Dystroglycan)	man	#00A651	#dfe6d2
+Protein O-GlcNAc	glcnac	#0090BC	#d4e6f6
 Glucuronoside		
 Glycogen		
 Glycogen phosphorylase		
 Glycogenin		
 Hyaluronan		
 Inactive		
-Collagen	gal	yellow	#fcf4e0
-Protein C-Mannosylation	man	green	#dfe6d2
-Protein O-GlcNAc (Extracellular)	glcnac	blue	#d4e6f6
+Collagen	gal	#FFD400	#fcf4e0
+Protein C-Mannosylation	man	#00A651	#dfe6d2
+Protein O-GlcNAc (Extracellular)	glcnac	#0090BC	#d4e6f6
 Pseudogene			
 QC			
 Unknown			
