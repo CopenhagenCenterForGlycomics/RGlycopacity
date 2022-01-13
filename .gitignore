@@ -1,2 +1,5 @@
 .Rproj.user
 inst/doc
+.cache
+.DS_store
+*/.DS_store
