@@ -15,6 +15,7 @@ rle_strings = function(strings) {
 
 if (requireNamespace("ggplot2",quietly=TRUE)) {
 
+#'@export
 facet_glycogenome <- function(genes = NULL, cols = NULL, scales = "free",
                        space = "free", shrink = TRUE
                        ) {
