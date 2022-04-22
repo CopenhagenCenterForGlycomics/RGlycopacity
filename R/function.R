@@ -17,8 +17,8 @@ calculatePseudobulks <- function(obj.seurat) {
     stop('Seurat package is not installed')
   }
 
-  if (!requireNamespace('pbmclapply',quietly=TRUE)) {
-    stop('pbmclapply package is not installed')
+  if (!requireNamespace('pbmcapply',quietly=TRUE)) {
+    stop('pbmcapply package is not installed')
   }
 
   requireNamespace('Matrix')
@@ -33,6 +33,8 @@ calculatePseudobulks <- function(obj.seurat) {
   row_indices <- 1:nrow(obj.sm)
 
   batches.list <- split(col_indices, ceiling(seq_along(col_indices)/1000))
+
+  message("Batching Pseudobulk operation into",length(batches.list),"batches")
 
   pbmcapply_function <- function(i, c.df, r.vec) {
 

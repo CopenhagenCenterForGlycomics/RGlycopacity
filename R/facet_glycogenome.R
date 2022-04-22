@@ -1,6 +1,7 @@
 
 test <- function() {
   allgenes = unique(glycogenome_ordering$HGNC)
+  #allgenes = sample( unique(glycogenome_ordering$HGNC), length(unique(glycogenome_ordering$HGNC))*1.5,replace=T )
   allgenes = sample(allgenes,30)
   ggplot(data.frame(gene=allgenes,baz=sample(c('a','b'),length(allgenes),T),x=rnorm(length(allgenes),10,0.1)),aes(x,y=gene))+geom_point()+facet_glycogenome(genes=vars(gene),scales="free")
   #ggplot(data.frame(gene=rep(allgenes,3),baz=sample(c('a','b'),3*length(allgenes),T),x=rnorm(3*length(allgenes),10,0.1)),aes(x))+geom_histogram()+facet_glycogenome(genes=vars(gene),cols=vars(baz),scales="free_x")
@@ -48,7 +49,7 @@ facet_glycogenome <- function(genes = NULL, cols = NULL, scales = "free",
 FacetGlycogenome <- ggplot2::ggproto("FacetGlycogenome", ggplot2::FacetGrid,
   compute_layout = function(data,params) {
     data = lapply(data, function(df) {
-      genes = combine_vars(data, params$plot_env, params$rows, drop = params$drop)
+      genes = lapply(params$rows, function(quo) rlang::eval_tidy(quo,df))
       df$glycogene_pathway = with(RGlycopacity::glycogenome_ordering, setNames(Group.Name,HGNC))[genes[[1]]]
       df
     })
@@ -56,9 +57,10 @@ FacetGlycogenome <- ggplot2::ggproto("FacetGlycogenome", ggplot2::FacetGrid,
     return(ggplot2::FacetGrid$compute_layout(data,params))
   },
   map_data = function(data,layout,params) {
-    genes = combine_vars(list(data), params$plot_env, params$rows, drop = params$drop)
+    genes = lapply(params$rows, function(quo) rlang::eval_tidy(quo,data))
     data$glycogene_pathway = with(RGlycopacity::glycogenome_ordering, setNames(Group.Name,HGNC))[genes[[1]]]
-    data$gene = factor(data$gene,rev( unique(RGlycopacity::glycogenome_ordering$HGNC )))
+    factor_name = rlang::as_name(params$rows[[1]])
+    data[[factor_name]] = factor(data[[factor_name]],rev( unique(RGlycopacity::glycogenome_ordering$HGNC )))
     params$rows = list(glycogene_pathway=quo(glycogene_pathway))
     return(ggplot2::FacetGrid$map_data(data,layout,params))
   },
