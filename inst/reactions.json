@@ -1,0 +1,3475 @@
+{
+   "A3GALT2" : {
+      "entrez" : 127550,
+      "group" : "Inactive",
+      "hgnc" : "A3GALT2",
+      "reactions" : [
+         [
+            "Gal(b1-4)Glc(b1-?)Cer+\"{Gal(a1-3)}@y3a\""
+         ]
+      ]
+   },
+   "A4GALT" : {
+      "entrez" : 53947,
+      "group" : "Core extension",
+      "hgnc" : "A4GALT",
+      "reactions" : [
+         [
+            "Gal(b1-4)Glc(b1-?)Cer+\"{Gal(a1-4)}@y3a\""
+         ]
+      ]
+   },
+   "A4GNT" : {
+      "entrez" : 51146,
+      "group" : "Capping",
+      "hgnc" : "A4GNT",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(a1-4)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(a1-4)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(a1-4)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(a1-4)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(a1-4)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(a1-4)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(a1-4)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(a1-4)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(a1-4)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(a1-4)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(a1-4)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(a1-4)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{GlcNAc(a1-4)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{GlcNAc(a1-4)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{GlcNAc(a1-4)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{GlcNAc(a1-4)}@y4a\""
+         ]
+      ]
+   },
+   "ABO" : {
+      "entrez" : 28,
+      "group" : "Capping",
+      "hgnc" : "ABO",
+      "reactions" : [
+         [
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GalNAc(a1-3)}@y8a\"",
+            "Fuc(a1-2)Gal(b1-3)GalNAc(a1-O)Ser+\"{GalNAc(a1-3)}@y3a\"",
+            "Fuc(a1-2)Gal(b1-3)GalNAc(a1-O)Thr+\"{GalNAc(a1-3)}@y3a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{GalNAc(a1-3)}@y6a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{GalNAc(a1-3)}@y6a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GalNAc(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GalNAc(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GalNAc(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GalNAc(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GalNAc(a1-3)}@y6a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GalNAc(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GalNAc(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GalNAc(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GalNAc(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)Any(a1-O)Ser+\"{GalNAc(a1-3)}@y3a\"",
+            "Fuc(a1-2)Gal(b1-?)Any(a1-O)Thr+\"{GalNAc(a1-3)}@y3a\""
+         ],
+         [
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(a1-3)}@y8a\"",
+            "Fuc(a1-2)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(a1-3)}@y3a\"",
+            "Fuc(a1-2)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(a1-3)}@y3a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(a1-3)}@y6a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(a1-3)}@y6a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(a1-3)}@y6a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(a1-3)}@y5a\"",
+            "Fuc(a1-2)Gal(b1-?)Any(a1-O)Ser+\"{Gal(a1-3)}@y3a\"",
+            "Fuc(a1-2)Gal(b1-?)Any(a1-O)Thr+\"{Gal(a1-3)}@y3a\""
+         ]
+      ]
+   },
+   "ALG1" : {
+      "entrez" : 56052,
+      "group" : "Initiation",
+      "hgnc" : "ALG1",
+      "reactions" : [
+         [
+            "GlcNAc(b1-4)GlcNAc(b1-N)Dol-PP+\"{Man(b1-4)}@y3a\""
+         ]
+      ]
+   },
+   "ALG10" : {
+      "entrez" : 84920,
+      "group" : "Initiation",
+      "hgnc" : "ALG10",
+      "reactions" : [
+         [
+            "Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Dol-PP+\"{Glc(a1-2)}@y9a\""
+         ]
+      ]
+   },
+   "ALG10B" : {
+      "entrez" : 144245,
+      "group" : "Initiation",
+      "hgnc" : "ALG10B",
+      "reactions" : [
+         [
+            "Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Dol-PP+\"{Glc(a1-2)}@y9a\""
+         ]
+      ]
+   },
+   "ALG11" : {
+      "entrez" : 440138,
+      "group" : "Initiation",
+      "hgnc" : "ALG11",
+      "reactions" : [
+         [
+            "Man(a1-2)Man(a1-3)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Dol-PP+\"{Man(a1-2)}@y6a\"",
+            "Man(a1-3)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Dol-PP+\"{Man(a1-2)}@y5a\""
+         ]
+      ]
+   },
+   "ALG12" : {
+      "entrez" : 79087,
+      "group" : "Initiation",
+      "hgnc" : "ALG12",
+      "reactions" : [
+         [
+            "Man(a1-6)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Dol-PP+\"{Man(a1-6)}@y5a\""
+         ]
+      ]
+   },
+   "ALG13" : {
+      "entrez" : 79868,
+      "group" : "Initiation",
+      "hgnc" : "ALG13",
+      "reactions" : [
+         [
+            "GlcNAc(b1-N)Dol-PP+\"{GlcNAc(b1-4)}@y2a\""
+         ]
+      ]
+   },
+   "ALG14" : {
+      "entrez" : 199857,
+      "group" : "Initiation",
+      "hgnc" : "ALG14",
+      "reactions" : [
+         [
+            "GlcNAc(b1-N)Dol-PP+\"{GlcNAc(b1-4)}@y2a\""
+         ]
+      ]
+   },
+   "ALG2" : {
+      "entrez" : 85365,
+      "group" : "Initiation",
+      "hgnc" : "ALG2",
+      "reactions" : [
+         [
+            "Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Dol-PP+\"{Man(a1-6)}@y4a\""
+         ],
+         [
+            "Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Dol-PP+\"{Man(a1-3)}@y4a\""
+         ]
+      ]
+   },
+   "ALG3" : {
+      "entrez" : 10195,
+      "group" : "Initiation",
+      "hgnc" : "ALG3",
+      "reactions" : [
+         [
+            "Man(a1-6)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Dol-PP+\"{Man(a1-3)}@y5a\""
+         ]
+      ]
+   },
+   "ALG5" : {
+      "entrez" : 29880,
+      "group" : "Initiation",
+      "hgnc" : "ALG5",
+      "reactions" : [
+         [
+            "Dol-P+\"{Glc(u1-?)}@y1a\""
+         ]
+      ]
+   },
+   "ALG6" : {
+      "entrez" : 29929,
+      "group" : "Initiation",
+      "hgnc" : "ALG6",
+      "reactions" : [
+         [
+            "Man(a1-2)Man(a1-2)Man(a1-3)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Dol-PP+\"{Glc(a1-3)}@y7a\""
+         ]
+      ]
+   },
+   "ALG8" : {
+      "entrez" : 79053,
+      "group" : "Initiation",
+      "hgnc" : "ALG8",
+      "reactions" : [
+         [
+            "Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Dol-PP+\"{Glc(a1-3)}@y8a\""
+         ]
+      ]
+   },
+   "ALG9" : {
+      "entrez" : 79796,
+      "group" : "Initiation",
+      "hgnc" : "ALG9",
+      "reactions" : [
+         [
+            "Man(a1-3)Man(a1-6)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Dol-PP+\"{Man(a1-2)}@y6a\"",
+            "Man(a1-6)Man(a1-6)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Dol-PP+\"{Man(a1-2)}@y6a\""
+         ]
+      ]
+   },
+   "B3GALNT1" : {
+      "entrez" : 8706,
+      "group" : "Core extension",
+      "hgnc" : "B3GALNT1",
+      "reactions" : [
+         [
+            "Gal(a1-4)Gal(b1-4)Glc(b1-?)Cer+\"{GalNAc(b1-3)}@y4a\""
+         ]
+      ]
+   },
+   "B3GALNT2" : {
+      "entrez" : 148789,
+      "group" : "Core extension",
+      "hgnc" : "B3GALNT2",
+      "reactions" : [
+         [
+            "GlcNAc(b1-4)Man(a1-O)Ser+\"{GalNAc(b1-3)}@y3a\"",
+            "GlcNAc(b1-4)Man(a1-O)Thr+\"{GalNAc(b1-3)}@y3a\""
+         ]
+      ]
+   },
+   "B3GALT1" : {
+      "entrez" : 8708,
+      "group" : "Elongation",
+      "hgnc" : "B3GALT1",
+      "reactions" : [
+         [
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y4a\"",
+            "GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-3)}@y4a\"",
+            "GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Thr+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-3)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-3)}@y9a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-3)}@y6a\""
+         ]
+      ]
+   },
+   "B3GALT2" : {
+      "entrez" : 8707,
+      "group" : "Elongation",
+      "hgnc" : "B3GALT2",
+      "reactions" : [
+         [
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y4a\"",
+            "GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-3)}@y4a\"",
+            "GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Thr+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-3)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-3)}@y9a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-3)}@y6a\""
+         ]
+      ]
+   },
+   "B3GALT4" : {
+      "entrez" : 8705,
+      "group" : "Core extension",
+      "hgnc" : "B3GALT4",
+      "reactions" : [
+         [
+            "GalNAc(b1-4)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-3)}@y4a\""
+         ]
+      ]
+   },
+   "B3GALT5" : {
+      "entrez" : 10317,
+      "group" : "Elongation",
+      "hgnc" : "B3GALT5",
+      "reactions" : [
+         [
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y4a\"",
+            "GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-3)}@y4a\"",
+            "GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Thr+\"{Gal(b1-3)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-3)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-3)}@y9a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-3)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-3)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-3)}@y6a\""
+         ]
+      ]
+   },
+   "B3GALT6" : {
+      "entrez" : 126792,
+      "group" : "Core extension",
+      "hgnc" : "B3GALT6",
+      "reactions" : [
+         [
+            "Gal(b1-4)Xyl(b1-O)Ser+\"{Gal(b1-3)}@y3a\"",
+            "Gal(b1-4)Xyl(b1-O)Thr+\"{Gal(b1-3)}@y3a\""
+         ]
+      ]
+   },
+   "B3GAT1" : {
+      "entrez" : 27087,
+      "group" : "Capping",
+      "hgnc" : "B3GAT1",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcA(b1-3)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcA(b1-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcA(b1-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcA(b1-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{GlcA(b1-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{GlcA(b1-3)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{GlcA(b1-3)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{GlcA(b1-3)}@y4a\""
+         ]
+      ]
+   },
+   "B3GAT2" : {
+      "entrez" : 135152,
+      "group" : "Capping",
+      "hgnc" : "B3GAT2",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcA(b1-3)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcA(b1-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcA(b1-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcA(b1-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcA(b1-3)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{GlcA(b1-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{GlcA(b1-3)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{GlcA(b1-3)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{GlcA(b1-3)}@y4a\""
+         ]
+      ]
+   },
+   "B3GAT3" : {
+      "entrez" : 26229,
+      "group" : "Core extension",
+      "hgnc" : "B3GAT3",
+      "reactions" : [
+         [
+            "Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcA(b1-3)}@y4a\"",
+            "Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcA(b1-3)}@y4a\""
+         ]
+      ]
+   },
+   "B3GLCT" : {
+      "entrez" : 145173,
+      "group" : "Core extension",
+      "hgnc" : "B3GLCT",
+      "reactions" : [
+         [
+            "Fuc(a1-O)Ser+\"{Glc(b1-3)}@y2a\"",
+            "Fuc(a1-O)Thr+\"{Glc(b1-3)}@y2a\""
+         ]
+      ]
+   },
+   "B3GNT2" : {
+      "entrez" : 10678,
+      "group" : "Elongation",
+      "hgnc" : "B3GNT2",
+      "reactions" : [
+         [
+            "Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-3)}@y5a\"",
+            "Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y10a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y6a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y6a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-3)}@y8a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\""
+         ]
+      ]
+   },
+   "B3GNT3" : {
+      "entrez" : 10331,
+      "group" : "Elongation",
+      "hgnc" : "B3GNT3",
+      "reactions" : [
+         [
+            "Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-3)}@y5a\"",
+            "Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y10a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y6a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y6a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-3)}@y8a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\""
+         ]
+      ]
+   },
+   "B3GNT4" : {
+      "entrez" : 79369,
+      "group" : "Elongation",
+      "hgnc" : "B3GNT4",
+      "reactions" : [
+         [
+            "Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-3)}@y5a\"",
+            "Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y10a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y6a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y6a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-3)}@y8a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\""
+         ]
+      ]
+   },
+   "B3GNT5" : {
+      "entrez" : 84002,
+      "group" : "Core extension",
+      "hgnc" : "B3GNT5",
+      "reactions" : [
+         [
+            "Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-3)}@y3a\""
+         ]
+      ]
+   },
+   "B3GNT6" : {
+      "entrez" : 192134,
+      "group" : "Core extension",
+      "hgnc" : "B3GNT6",
+      "reactions" : [
+         [
+            "GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y2a\"",
+            "GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y2a\""
+         ]
+      ]
+   },
+   "B3GNT7" : {
+      "entrez" : 93010,
+      "group" : "Elongation",
+      "hgnc" : "B3GNT7",
+      "reactions" : [
+         [
+            "Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-3)}@y5a\"",
+            "Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y10a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y6a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y6a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-3)}@y8a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\""
+         ]
+      ]
+   },
+   "B3GNT8" : {
+      "entrez" : 374907,
+      "group" : "Elongation",
+      "hgnc" : "B3GNT8",
+      "reactions" : [
+         [
+            "Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-3)}@y5a\"",
+            "Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y10a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y6a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y6a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-3)}@y8a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\""
+         ]
+      ]
+   },
+   "B3GNT9" : {
+      "entrez" : 84752,
+      "group" : "Elongation",
+      "hgnc" : "B3GNT9",
+      "reactions" : [
+         [
+            "Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-3)}@y5a\"",
+            "Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y4a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{GlcNAc(b1-3)}@y3a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-3)}@y10a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y6a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y6a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-3)}@y8a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-3)}@y7a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*(u?-?)Gal(b1-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-3)}@y7a\""
+         ]
+      ]
+   },
+   "B4GALNT1" : {
+      "entrez" : 2583,
+      "group" : "Core extension",
+      "hgnc" : "B4GALNT1",
+      "reactions" : [
+         [
+            "Gal(b1-4)Glc(b1-?)Cer+\"{GalNAc(b1-4)}@y3a\""
+         ]
+      ]
+   },
+   "B4GALNT2" : {
+      "entrez" : 124872,
+      "group" : "Capping",
+      "hgnc" : "B4GALNT2",
+      "reactions" : [
+         [
+            "NeuAc(a2-3)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GalNAc(b1-4)}@y8a\"",
+            "NeuAc(a2-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{GalNAc(b1-4)}@y6a\"",
+            "NeuAc(a2-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{GalNAc(b1-4)}@y6a\"",
+            "NeuAc(a2-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GalNAc(b1-4)}@y5a\"",
+            "NeuAc(a2-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GalNAc(b1-4)}@y5a\"",
+            "NeuAc(a2-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GalNAc(b1-4)}@y5a\"",
+            "NeuAc(a2-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GalNAc(b1-4)}@y5a\"",
+            "NeuAc(a2-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GalNAc(b1-4)}@y6a\"",
+            "NeuAc(a2-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GalNAc(b1-4)}@y5a\"",
+            "NeuAc(a2-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GalNAc(b1-4)}@y5a\"",
+            "NeuAc(a2-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GalNAc(b1-4)}@y5a\"",
+            "NeuAc(a2-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GalNAc(b1-4)}@y5a\"",
+            "NeuAc(a2-3)Gal(b1-?)Any(a1-O)Ser+\"{GalNAc(b1-4)}@y3a\"",
+            "NeuAc(a2-3)Gal(b1-?)Any(a1-O)Thr+\"{GalNAc(b1-4)}@y3a\""
+         ]
+      ]
+   },
+   "B4GALNT3" : {
+      "entrez" : 283358,
+      "group" : "Elongation",
+      "hgnc" : "B4GALNT3",
+      "reactions" : [
+         [
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GalNAc(b1-4)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{GalNAc(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{GalNAc(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GalNAc(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{GalNAc(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{GalNAc(b1-4)}@y3a\""
+         ]
+      ]
+   },
+   "B4GALNT4" : {
+      "entrez" : 338707,
+      "group" : "Elongation",
+      "hgnc" : "B4GALNT4",
+      "reactions" : [
+         [
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GalNAc(b1-4)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{GalNAc(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{GalNAc(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GalNAc(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GalNAc(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{GalNAc(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{GalNAc(b1-4)}@y3a\""
+         ]
+      ]
+   },
+   "B4GALT1" : {
+      "entrez" : 2683,
+      "group" : "Elongation",
+      "hgnc" : "B4GALT1",
+      "reactions" : [
+         [
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y4a\"",
+            "GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y4a\"",
+            "GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y9a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\""
+         ]
+      ]
+   },
+   "B4GALT2" : {
+      "entrez" : 8704,
+      "group" : "Elongation",
+      "hgnc" : "B4GALT2",
+      "reactions" : [
+         [
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y4a\"",
+            "GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y4a\"",
+            "GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y9a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\""
+         ]
+      ]
+   },
+   "B4GALT3" : {
+      "entrez" : 8703,
+      "group" : "Elongation",
+      "hgnc" : "B4GALT3",
+      "reactions" : [
+         [
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y4a\"",
+            "GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y4a\"",
+            "GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y9a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\""
+         ]
+      ]
+   },
+   "B4GALT4" : {
+      "entrez" : 8702,
+      "group" : "Elongation",
+      "hgnc" : "B4GALT4",
+      "reactions" : [
+         [
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y4a\"",
+            "GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y4a\"",
+            "GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Ser+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-?)Any(a1-O)Thr+\"{Gal(b1-4)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-3)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Gal(b1-4)}@y9a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-?)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Gal(b1-4)}@y7a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Gal(b1-4)}@y6a\"",
+            "GlcNAc(b1-6)Gal(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Gal(b1-4)}@y6a\""
+         ]
+      ]
+   },
+   "B4GALT5" : {
+      "entrez" : 9334,
+      "group" : "Core extension",
+      "hgnc" : "B4GALT5",
+      "reactions" : [
+         [
+            "Glc(b1-?)Cer+\"{Gal(b1-4)}@y2a\""
+         ]
+      ]
+   },
+   "B4GALT6" : {
+      "entrez" : 9331,
+      "group" : "Core extension",
+      "hgnc" : "B4GALT6",
+      "reactions" : [
+         [
+            "Glc(b1-?)Cer+\"{Gal(b1-4)}@y2a\""
+         ]
+      ]
+   },
+   "B4GALT7" : {
+      "entrez" : 11285,
+      "group" : "Core extension",
+      "hgnc" : "B4GALT7",
+      "reactions" : [
+         [
+            "Xyl(b1-O)Ser+\"{Gal(b1-4)}@y2a\"",
+            "Xyl(b1-O)Thr+\"{Gal(b1-4)}@y2a\""
+         ]
+      ]
+   },
+   "B4GAT1" : {
+      "entrez" : 11041,
+      "group" : "Core extension",
+      "hgnc" : "B4GAT1",
+      "reactions" : [
+         [
+            "Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{GlcA(b1-3)}@y9a\"",
+            "Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{GlcA(b1-3)}@y9a\""
+         ]
+      ]
+   },
+   "C1GALT1" : {
+      "entrez" : 56913,
+      "group" : "Core extension",
+      "hgnc" : "C1GALT1",
+      "reactions" : [
+         [
+            "GalNAc(a1-O)Ser+\"{Gal(b1-3)}@y2a\"",
+            "GalNAc(a1-O)Thr+\"{Gal(b1-3)}@y2a\""
+         ]
+      ]
+   },
+   "CHPF" : {
+      "entrez" : 79586,
+      "group" : "Core extension repeat",
+      "hgnc" : "CHPF",
+      "reactions" : [
+         [
+            "GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcA(b1-3)}@y7a\"",
+            "GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcA(b1-3)}@y7a\""
+         ],
+         [
+            "GlcA(b1-3)GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GalNAc(b1-4)}@y8a\"",
+            "GlcA(b1-3)GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GalNAc(b1-4)}@y8a\""
+         ]
+      ]
+   },
+   "CHPF2" : {
+      "entrez" : 54480,
+      "group" : "Core extension repeat",
+      "hgnc" : "CHPF2",
+      "reactions" : [
+         [
+            "GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcA(b1-3)}@y7a\"",
+            "GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcA(b1-3)}@y7a\""
+         ]
+      ]
+   },
+   "CHST1" : {
+      "entrez" : 8534,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST1",
+      "reactions" : [
+         [
+            "Gal(b1-?)GlcNAc(b1-?)*+\"{HSO3(u?-6)}@y3a\""
+         ]
+      ]
+   },
+   "CHST10" : {
+      "entrez" : 9486,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST10",
+      "reactions" : [
+         [
+            "GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y5a\"",
+            "GlcA(b1-3)Gal(b1-?)GlcNAc(b1-?)*+\"{HSO3(u?-3)}@y4a\""
+         ]
+      ]
+   },
+   "CHST11" : {
+      "entrez" : 50515,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST11",
+      "reactions" : [
+         [
+            "GlcA(b1-3)GalNAc(b1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-4)}@y4a\""
+         ]
+      ]
+   },
+   "CHST12" : {
+      "entrez" : 55501,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST12",
+      "reactions" : [
+         [
+            "GlcA(b1-3)GalNAc(b1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-4)}@y4a\""
+         ]
+      ]
+   },
+   "CHST13" : {
+      "entrez" : 166012,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST13",
+      "reactions" : [
+         [
+            "GlcA(b1-3)GalNAc(b1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-4)}@y4a\""
+         ]
+      ]
+   },
+   "CHST14" : {
+      "entrez" : 113189,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST14",
+      "reactions" : [
+         [
+            "IdoA(b1-3)GalNAc(b1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-4)}@y4a\""
+         ]
+      ]
+   },
+   "CHST15" : {
+      "entrez" : 51363,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST15",
+      "reactions" : [
+         [
+            "GlcA(b1-3)GalNAc(b1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-6)}@y4a\"",
+            "IdoA(b1-3)GalNAc(b1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-6)}@y4a\""
+         ],
+         [
+            "GlcA(b1-3)GalNAc(b1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-4)}@y4a\"",
+            "IdoA(b1-3)GalNAc(b1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-4)}@y4a\""
+         ]
+      ]
+   },
+   "CHST2" : {
+      "entrez" : 9435,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST2",
+      "reactions" : [
+         [
+            "Fuc(a1-3)[NeuAc(a2-3)Gal(b1-4)]GlcNAc(b1-3)*+\"{HSO3(u?-6)}@y2a\"",
+            "Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-O)Ser+\"{HSO3(u?-6)}@y3b\"",
+            "Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-O)Thr+\"{HSO3(u?-6)}@y3b\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{HSO3(u?-6)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{HSO3(u?-6)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-?)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{HSO3(u?-6)}@y6a\""
+         ]
+      ]
+   },
+   "CHST3" : {
+      "entrez" : 9469,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST3",
+      "reactions" : [
+         [
+            "Gal(b1-?)GlcNAc(b1-?)*+\"{HSO3(u?-6)}@y3a\"",
+            "GlcA(b1-3)GalNAc(b1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-6)}@y4a\""
+         ]
+      ]
+   },
+   "CHST4" : {
+      "entrez" : 10164,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST4",
+      "reactions" : [
+         [
+            "Fuc(a1-3)[NeuAc(a2-3)Gal(b1-4)]GlcNAc(b1-3)*+\"{HSO3(u?-6)}@y2a\"",
+            "Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-O)Ser+\"{HSO3(u?-6)}@y3b\"",
+            "Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-O)Thr+\"{HSO3(u?-6)}@y3b\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{HSO3(u?-6)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{HSO3(u?-6)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-?)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{HSO3(u?-6)}@y3a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{HSO3(u?-6)}@y3a\"",
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{HSO3(u?-6)}@y6a\""
+         ]
+      ]
+   },
+   "CHST5" : {
+      "entrez" : 23563,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST5",
+      "reactions" : [
+         [
+            "Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-O)Ser+\"{HSO3(u?-6)}@y3b\"",
+            "Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-O)Thr+\"{HSO3(u?-6)}@y3b\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{HSO3(u?-6)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{HSO3(u?-6)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-?)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{HSO3(u?-6)}@y6a\"",
+            "Gal(b1-4)GlcNAc(b1-3)*+\"!{Fuc(a1-3)}@y2a\"",
+            "Gal(b1-4)GlcNAc(b1-3)*+\"!{NeuAc(a2-3)}@y3a\""
+         ]
+      ]
+   },
+   "CHST6" : {
+      "entrez" : 4166,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST6",
+      "reactions" : [
+         [
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{HSO3(u?-6)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{HSO3(u?-6)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-?)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{HSO3(u?-6)}@y6a\"",
+            "Gal(b1-4)GlcNAc(b1-3)*+\"!{Fuc(a1-3)}@y2a\"",
+            "Gal(b1-4)GlcNAc(b1-3)*+\"!{NeuAc(a2-3)}@y3a\""
+         ]
+      ]
+   },
+   "CHST7" : {
+      "entrez" : 56548,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST7",
+      "reactions" : [
+         [
+            "Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-O)Ser+\"{HSO3(u?-6)}@y3b\"",
+            "Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-O)Thr+\"{HSO3(u?-6)}@y3b\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{HSO3(u?-6)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{HSO3(u?-6)}@y3a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-3)GlcNAc(b1-?)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)*+\"{HSO3(u?-6)}@y4a\"",
+            "GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{HSO3(u?-6)}@y6a\"",
+            "Gal(b1-4)GlcNAc(b1-3)*+\"!{Fuc(a1-3)}@y2a\"",
+            "Gal(b1-4)GlcNAc(b1-3)*+\"!{NeuAc(a2-3)}@y3a\""
+         ]
+      ]
+   },
+   "CHST8" : {
+      "entrez" : 64377,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST8",
+      "reactions" : [
+         [
+            "GalNAc(b1-4)GlcNAc(u?-?)*+\"{HSO3(u?-4)}@y3a\""
+         ]
+      ]
+   },
+   "CHST9" : {
+      "entrez" : 83539,
+      "group" : "Capping Sulfo",
+      "hgnc" : "CHST9",
+      "reactions" : [
+         [
+            "GalNAc(b1-4)GlcNAc(u?-?)*+\"{HSO3(u?-4)}@y3a\""
+         ]
+      ]
+   },
+   "CHSY1" : {
+      "entrez" : 22856,
+      "group" : "Core extension repeat",
+      "hgnc" : "CHSY1",
+      "reactions" : [
+         [
+            "GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcA(b1-3)}@y7a\"",
+            "GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcA(b1-3)}@y7a\""
+         ],
+         [
+            "GlcA(b1-3)GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GalNAc(b1-4)}@y8a\"",
+            "GlcA(b1-3)GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GalNAc(b1-4)}@y8a\""
+         ]
+      ]
+   },
+   "CHSY3" : {
+      "entrez" : 337876,
+      "group" : "Core extension repeat",
+      "hgnc" : "CHSY3",
+      "reactions" : [
+         [
+            "GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcA(b1-3)}@y7a\"",
+            "GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcA(b1-3)}@y7a\""
+         ],
+         [
+            "GlcA(b1-3)GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GalNAc(b1-4)}@y8a\"",
+            "GlcA(b1-3)GalNAc(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GalNAc(b1-4)}@y8a\""
+         ]
+      ]
+   },
+   "COLGALT1" : {
+      "entrez" : 79709,
+      "group" : "Initiation",
+      "hgnc" : "COLGALT1",
+      "reactions" : [
+         [
+            "Hyl+\"{Gal(b1-O)}@y1a\""
+         ]
+      ]
+   },
+   "COLGALT2" : {
+      "entrez" : 23127,
+      "group" : "Initiation",
+      "hgnc" : "COLGALT2",
+      "reactions" : [
+         [
+            "Hyl+\"{Gal(b1-O)}@y1a\""
+         ]
+      ]
+   },
+   "CSGALNACT1" : {
+      "entrez" : 55790,
+      "group" : "Core extension",
+      "hgnc" : "CSGALNACT1",
+      "reactions" : [
+         [
+            "GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GalNAc(b1-4)}@y5a\"",
+            "GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GalNAc(b1-4)}@y5a\""
+         ]
+      ]
+   },
+   "CSGALNACT2" : {
+      "entrez" : 55454,
+      "group" : "Core extension",
+      "hgnc" : "CSGALNACT2",
+      "reactions" : [
+         [
+            "GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GalNAc(b1-4)}@y5a\"",
+            "GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GalNAc(b1-4)}@y5a\""
+         ]
+      ]
+   },
+   "DPAGT1" : {
+      "entrez" : 1798,
+      "group" : "Initiation",
+      "hgnc" : "DPAGT1",
+      "reactions" : [
+         [
+            "Dol-PP+\"{GlcNAc(b1-N)}@y1a\""
+         ]
+      ]
+   },
+   "DPM1" : {
+      "entrez" : 8813,
+      "group" : "Initiation",
+      "hgnc" : "DPM1",
+      "reactions" : [
+         [
+            "Dol-P+\"{Man(u1-?)}@y1a\""
+         ]
+      ]
+   },
+   "DPY19L1" : {
+      "entrez" : 23333,
+      "group" : "Initiation",
+      "hgnc" : "DPY19L1",
+      "reactions" : [
+         [
+            "Trp+\"{Man(a1-2)}@y1a\""
+         ]
+      ]
+   },
+   "DPY19L2" : {
+      "entrez" : 283417,
+      "group" : "Initiation",
+      "hgnc" : "DPY19L2",
+      "reactions" : [
+         [
+            "Trp+\"{Man(a1-2)}@y1a\""
+         ]
+      ]
+   },
+   "DPY19L3" : {
+      "entrez" : 147991,
+      "group" : "Initiation",
+      "hgnc" : "DPY19L3",
+      "reactions" : [
+         [
+            "Trp+\"{Man(a1-2)}@y1a\""
+         ]
+      ]
+   },
+   "DPY19L4" : {
+      "entrez" : 286148,
+      "group" : "Initiation",
+      "hgnc" : "DPY19L4",
+      "reactions" : [
+         [
+            "Trp+\"{Man(a1-2)}@y1a\""
+         ]
+      ]
+   },
+   "DSE" : {
+      "entrez" : 29940,
+      "group" : "Capping",
+      "hgnc" : "DSE",
+      "reactions" : [
+         [
+            "GlcA(b1-3)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{IdoA}@y7a\""
+         ]
+      ]
+   },
+   "DSEL" : {
+      "entrez" : 92126,
+      "group" : "Capping",
+      "hgnc" : "DSEL",
+      "reactions" : [
+         [
+            "GlcA(b1-3)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{IdoA}@y7a\""
+         ]
+      ]
+   },
+   "EOGT" : {
+      "entrez" : 285203,
+      "group" : "Initiation",
+      "hgnc" : "EOGT",
+      "reactions" : [
+         [
+            "Ser+\"{GlcNAc(b1-O)}@y1a\"",
+            "Thr+\"{GlcNAc(b1-O)}@y1a\""
+         ]
+      ]
+   },
+   "EXT1" : {
+      "entrez" : 2131,
+      "group" : "Core extension repeat",
+      "hgnc" : "EXT1",
+      "reactions" : [
+         [
+            "GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcNAc(a1-4)}@y5a\"",
+            "GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcNAc(a1-4)}@y5a\"",
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcNAc(a1-4)}@y8a\"",
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcNAc(a1-4)}@y8a\""
+         ],
+         [
+            "GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcA(b1-4)}@y7a\"",
+            "GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcA(b1-4)}@y7a\""
+         ]
+      ]
+   },
+   "EXT2" : {
+      "entrez" : 2132,
+      "group" : "Core extension repeat",
+      "hgnc" : "EXT2",
+      "reactions" : [
+         [
+            "GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcNAc(a1-4)}@y5a\"",
+            "GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcNAc(a1-4)}@y5a\"",
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcNAc(a1-4)}@y8a\"",
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcNAc(a1-4)}@y8a\""
+         ],
+         [
+            "GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcA(b1-4)}@y7a\"",
+            "GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcA(b1-4)}@y7a\""
+         ]
+      ]
+   },
+   "EXTL1" : {
+      "entrez" : 2134,
+      "group" : "Core extension repeat",
+      "hgnc" : "EXTL1",
+      "reactions" : [
+         [
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcNAc(a1-4)}@y8a\"",
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcNAc(a1-4)}@y8a\""
+         ]
+      ]
+   },
+   "EXTL2" : {
+      "entrez" : 2135,
+      "group" : "Core extension repeat",
+      "hgnc" : "EXTL2",
+      "reactions" : [
+         [
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcNAc(a1-4)}@y8a\"",
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcNAc(a1-4)}@y8a\""
+         ],
+         [
+            "GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcA(b1-4)}@y7a\"",
+            "GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcA(b1-4)}@y7a\""
+         ]
+      ]
+   },
+   "EXTL3" : {
+      "entrez" : 2137,
+      "group" : "Core extension repeat",
+      "hgnc" : "EXTL3",
+      "reactions" : [
+         [
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{GlcNAc(a1-4)}@y8a\"",
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Thr+\"{GlcNAc(a1-4)}@y8a\""
+         ]
+      ]
+   },
+   "FKRP" : {
+      "entrez" : 79147,
+      "group" : "Core extension",
+      "hgnc" : "FKRP",
+      "reactions" : [
+         [
+            "GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{Rbo(u5-1)P(u1-3)}@y4a\"",
+            "GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{Rbo(u5-1)P(u1-3)}@y4a\""
+         ],
+         [
+            "Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{Rbo(u5-1)P(u1-1)}@y6a\"",
+            "Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{Rbo(u5-1)P(u1-1)}@y6a\""
+         ]
+      ]
+   },
+   "FKTN" : {
+      "entrez" : 2218,
+      "group" : "Core extension",
+      "hgnc" : "FKTN",
+      "reactions" : [
+         [
+            "GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{Rbo(u5-1)P(u1-3)}@y4a\"",
+            "GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{Rbo(u5-1)P(u1-3)}@y4a\""
+         ],
+         [
+            "Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{Rbo(u5-1)P(u1-1)}@y6a\"",
+            "Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{Rbo(u5-1)P(u1-1)}@y6a\""
+         ]
+      ]
+   },
+   "FUT1" : {
+      "entrez" : 2523,
+      "group" : "Capping",
+      "hgnc" : "FUT1",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Fuc(a1-2)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-2)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-2)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Fuc(a1-2)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{Fuc(a1-2)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{Fuc(a1-2)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{Fuc(a1-2)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{Fuc(a1-2)}@y4a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-2)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-2)}@y3a\""
+         ]
+      ]
+   },
+   "FUT10" : {
+      "entrez" : 84750,
+      "group" : "Capping",
+      "hgnc" : "FUT10",
+      "reactions" : [
+         [
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Fuc(a1-3)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{Fuc(a1-3)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{Fuc(a1-3)}@y3a\""
+         ]
+      ]
+   },
+   "FUT11" : {
+      "entrez" : 170384,
+      "group" : "Capping",
+      "hgnc" : "FUT11",
+      "reactions" : [
+         [
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Fuc(a1-3)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{Fuc(a1-3)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{Fuc(a1-3)}@y3a\""
+         ]
+      ]
+   },
+   "FUT2" : {
+      "entrez" : 2524,
+      "group" : "Capping",
+      "hgnc" : "FUT2",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Fuc(a1-2)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-2)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-2)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Fuc(a1-2)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Fuc(a1-2)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{Fuc(a1-2)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{Fuc(a1-2)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{Fuc(a1-2)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{Fuc(a1-2)}@y4a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-2)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-2)}@y3a\""
+         ]
+      ]
+   },
+   "FUT3" : {
+      "entrez" : 2525,
+      "group" : "Capping",
+      "hgnc" : "FUT3",
+      "reactions" : [
+         [
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Fuc(a1-4)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Fuc(a1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{Fuc(a1-4)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{Fuc(a1-4)}@y3a\""
+         ],
+         [
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Fuc(a1-3)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{Fuc(a1-3)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{Fuc(a1-3)}@y3a\""
+         ]
+      ]
+   },
+   "FUT4" : {
+      "entrez" : 2526,
+      "group" : "Capping",
+      "hgnc" : "FUT4",
+      "reactions" : [
+         [
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Fuc(a1-3)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{Fuc(a1-3)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{Fuc(a1-3)}@y3a\""
+         ]
+      ]
+   },
+   "FUT5" : {
+      "entrez" : 2527,
+      "group" : "Capping",
+      "hgnc" : "FUT5",
+      "reactions" : [
+         [
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Fuc(a1-4)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Fuc(a1-4)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Fuc(a1-4)}@y6a\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{Fuc(a1-4)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{Fuc(a1-4)}@y3a\""
+         ],
+         [
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Fuc(a1-3)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{Fuc(a1-3)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{Fuc(a1-3)}@y3a\""
+         ]
+      ]
+   },
+   "FUT6" : {
+      "entrez" : 2528,
+      "group" : "Capping",
+      "hgnc" : "FUT6",
+      "reactions" : [
+         [
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Fuc(a1-3)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{Fuc(a1-3)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{Fuc(a1-3)}@y3a\""
+         ]
+      ]
+   },
+   "FUT7" : {
+      "entrez" : 2529,
+      "group" : "Capping",
+      "hgnc" : "FUT7",
+      "reactions" : [
+         [
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Fuc(a1-3)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{Fuc(a1-3)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{Fuc(a1-3)}@y3a\""
+         ]
+      ]
+   },
+   "FUT8" : {
+      "entrez" : 2530,
+      "group" : "Branching",
+      "hgnc" : "FUT8",
+      "reactions" : [
+         [
+            "GlcNAc(b1-2)Man(a1-3)[GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Fuc(a1-6)}@y2a\"",
+            "GlcNAc(b1-2)Man(a1-3)[GlcNAc(b1-4)][Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"!{Fuc(a1-6)}@y2a\""
+         ]
+      ]
+   },
+   "FUT9" : {
+      "entrez" : 10690,
+      "group" : "Capping",
+      "hgnc" : "FUT9",
+      "reactions" : [
+         [
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{Fuc(a1-3)}@y9a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{Fuc(a1-3)}@y7a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{Fuc(a1-3)}@y6a\"",
+            "GlcNAc(b1-3)Any(a1-O)Ser+\"{Fuc(a1-3)}@y3a\"",
+            "GlcNAc(b1-3)Any(a1-O)Thr+\"{Fuc(a1-3)}@y3a\""
+         ]
+      ]
+   },
+   "GAL3ST1" : {
+      "entrez" : 9514,
+      "group" : "Capping Sulfo",
+      "hgnc" : "GAL3ST1",
+      "reactions" : [
+         [
+            "Gal(b1-?)Cer+\"{HSO3(u?-3)}@y2a\"",
+            "Gal(u1-?)*(u1-?)Cer+\"{HSO3(u?-3)}@y3a\""
+         ]
+      ]
+   },
+   "GAL3ST2" : {
+      "entrez" : 64090,
+      "group" : "Capping Sulfo",
+      "hgnc" : "GAL3ST2",
+      "reactions" : [
+         [
+            "Gal(b1-3)GalNAc(b1-?)*+\"{HSO3(u?-3)}@y3a\"",
+            "Gal(b1-?)GlcNAc(b1-3)*+\"{HSO3(u?-3)}@y3a\""
+         ]
+      ]
+   },
+   "GAL3ST3" : {
+      "entrez" : 89792,
+      "group" : "Capping Sulfo",
+      "hgnc" : "GAL3ST3",
+      "reactions" : [
+         [
+            "Gal(b1-?)GlcNAc(b1-3)*+\"{HSO3(u?-3)}@y3a\""
+         ]
+      ]
+   },
+   "GAL3ST4" : {
+      "entrez" : 79690,
+      "group" : "Capping Sulfo",
+      "hgnc" : "GAL3ST4",
+      "reactions" : [
+         [
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{HSO3(u?-3)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{HSO3(u?-3)}@y3a\""
+         ]
+      ]
+   },
+   "GALNT1" : {
+      "entrez" : 2589,
+      "group" : "Initiation",
+      "hgnc" : "GALNT1",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT10" : {
+      "entrez" : 55568,
+      "group" : "Initiation",
+      "hgnc" : "GALNT10",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT11" : {
+      "entrez" : 63917,
+      "group" : "Initiation",
+      "hgnc" : "GALNT11",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT12" : {
+      "entrez" : 79695,
+      "group" : "Initiation",
+      "hgnc" : "GALNT12",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT13" : {
+      "entrez" : 114805,
+      "group" : "Initiation",
+      "hgnc" : "GALNT13",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT14" : {
+      "entrez" : 79623,
+      "group" : "Initiation",
+      "hgnc" : "GALNT14",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT15" : {
+      "entrez" : 117248,
+      "group" : "Initiation",
+      "hgnc" : "GALNT15",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT16" : {
+      "entrez" : 57452,
+      "group" : "Initiation",
+      "hgnc" : "GALNT16",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT17" : {
+      "entrez" : 64409,
+      "group" : "Initiation",
+      "hgnc" : "GALNT17",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT18" : {
+      "entrez" : 374378,
+      "group" : "Initiation",
+      "hgnc" : "GALNT18",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT2" : {
+      "entrez" : 2590,
+      "group" : "Initiation",
+      "hgnc" : "GALNT2",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT3" : {
+      "entrez" : 2591,
+      "group" : "Initiation",
+      "hgnc" : "GALNT3",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT4" : {
+      "entrez" : 8693,
+      "group" : "Initiation",
+      "hgnc" : "GALNT4",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT5" : {
+      "entrez" : 11227,
+      "group" : "Initiation",
+      "hgnc" : "GALNT5",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT6" : {
+      "entrez" : 11226,
+      "group" : "Initiation",
+      "hgnc" : "GALNT6",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT7" : {
+      "entrez" : 51809,
+      "group" : "Initiation",
+      "hgnc" : "GALNT7",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT8" : {
+      "entrez" : 26290,
+      "group" : "Initiation",
+      "hgnc" : "GALNT8",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNT9" : {
+      "entrez" : 50614,
+      "group" : "Initiation",
+      "hgnc" : "GALNT9",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNTL5" : {
+      "entrez" : 168391,
+      "group" : "Initiation",
+      "hgnc" : "GALNTL5",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GALNTL6" : {
+      "entrez" : 442117,
+      "group" : "Initiation",
+      "hgnc" : "GALNTL6",
+      "reactions" : [
+         [
+            "Ser+\"{GalNAc(a1-O)}@y1a\"",
+            "Thr+\"{GalNAc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "GCNT1" : {
+      "entrez" : 2650,
+      "group" : "Branching",
+      "hgnc" : "GCNT1",
+      "reactions" : [
+         [
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-6)}@y2a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-6)}@y2a\""
+         ]
+      ]
+   },
+   "GCNT2" : {
+      "entrez" : 2651,
+      "group" : "Elongation",
+      "hgnc" : "GCNT2",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-6)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-6)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-6)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-6)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{GlcNAc(b1-6)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{GlcNAc(b1-6)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{GlcNAc(b1-6)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{GlcNAc(b1-6)}@y4a\""
+         ]
+      ]
+   },
+   "GCNT3" : {
+      "entrez" : 9245,
+      "group" : "Branching",
+      "hgnc" : "GCNT3",
+      "reactions" : [
+         [
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-6)}@y2a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-6)}@y2a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-6)}@y2a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-6)}@y2a\""
+         ]
+      ]
+   },
+   "GCNT4" : {
+      "entrez" : 51301,
+      "group" : "Branching",
+      "hgnc" : "GCNT4",
+      "reactions" : [
+         [
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-6)}@y2a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-6)}@y2a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-6)}@y2a\"",
+            "GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-6)}@y2a\""
+         ]
+      ]
+   },
+   "GCNT7" : {
+      "entrez" : 140687,
+      "group" : "Elongation",
+      "hgnc" : "GCNT7",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-6)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-6)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-6)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{GlcNAc(b1-6)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-6)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{GlcNAc(b1-6)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{GlcNAc(b1-6)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{GlcNAc(b1-6)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{GlcNAc(b1-6)}@y4a\""
+         ]
+      ]
+   },
+   "GLCE" : {
+      "entrez" : 26035,
+      "group" : "Capping",
+      "hgnc" : "GLCE",
+      "reactions" : [
+         [
+            "GlcA(b1-4)*(u?-?)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-O)Ser+\"{IdoA}@y7a\""
+         ]
+      ]
+   },
+   "GXYLT1" : {
+      "entrez" : 283464,
+      "group" : "Core extension",
+      "hgnc" : "GXYLT1",
+      "reactions" : [
+         [
+            "Glc(b1-O)Ser+\"{Xyl(a1-3)}@y2a\"",
+            "Glc(b1-O)Thr+\"{Xyl(a1-3)}@y2a\""
+         ]
+      ]
+   },
+   "GXYLT2" : {
+      "entrez" : 727936,
+      "group" : "Core extension",
+      "hgnc" : "GXYLT2",
+      "reactions" : [
+         [
+            "Glc(b1-O)Ser+\"{Xyl(a1-3)}@y2a\"",
+            "Glc(b1-O)Thr+\"{Xyl(a1-3)}@y2a\""
+         ]
+      ]
+   },
+   "HS2ST1" : {
+      "entrez" : 9653,
+      "group" : "Capping Sulfo",
+      "hgnc" : "HS2ST1",
+      "reactions" : [
+         [
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-2)}@y5a\"",
+            "IdoA(b1-4)GlcNAc(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-2)}@y5a\""
+         ]
+      ]
+   },
+   "HS3ST1" : {
+      "entrez" : 9957,
+      "group" : "Capping Sulfo",
+      "hgnc" : "HS3ST1",
+      "reactions" : [
+         [
+            "HSO3(u?-N)[GlcA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\"",
+            "HSO3(u?-N)[IdoA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\""
+         ]
+      ]
+   },
+   "HS3ST2" : {
+      "entrez" : 9956,
+      "group" : "Capping Sulfo",
+      "hgnc" : "HS3ST2",
+      "reactions" : [
+         [
+            "HSO3(u?-N)[GlcA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\"",
+            "HSO3(u?-N)[IdoA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\""
+         ]
+      ]
+   },
+   "HS3ST3A1" : {
+      "entrez" : 9955,
+      "group" : "Capping Sulfo",
+      "hgnc" : "HS3ST3A1",
+      "reactions" : [
+         [
+            "HSO3(u?-N)[GlcA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\"",
+            "HSO3(u?-N)[IdoA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\""
+         ]
+      ]
+   },
+   "HS3ST3B1" : {
+      "entrez" : 9953,
+      "group" : "Capping Sulfo",
+      "hgnc" : "HS3ST3B1",
+      "reactions" : [
+         [
+            "HSO3(u?-N)[GlcA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\"",
+            "HSO3(u?-N)[IdoA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\""
+         ]
+      ]
+   },
+   "HS3ST4" : {
+      "entrez" : 9951,
+      "group" : "Capping Sulfo",
+      "hgnc" : "HS3ST4",
+      "reactions" : [
+         [
+            "HSO3(u?-N)[GlcA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\"",
+            "HSO3(u?-N)[IdoA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\""
+         ]
+      ]
+   },
+   "HS3ST5" : {
+      "entrez" : 222537,
+      "group" : "Capping Sulfo",
+      "hgnc" : "HS3ST5",
+      "reactions" : [
+         [
+            "HSO3(u?-N)[GlcA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\"",
+            "HSO3(u?-N)[IdoA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\""
+         ]
+      ]
+   },
+   "HS3ST6" : {
+      "entrez" : 64711,
+      "group" : "Capping Sulfo",
+      "hgnc" : "HS3ST6",
+      "reactions" : [
+         [
+            "HSO3(u?-N)[GlcA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\"",
+            "HSO3(u?-N)[IdoA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-3)}@y4a\""
+         ]
+      ]
+   },
+   "HS6ST1" : {
+      "entrez" : 9394,
+      "group" : "Capping Sulfo",
+      "hgnc" : "HS6ST1",
+      "reactions" : [
+         [
+            "HSO3(u?-N)[GlcA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-6)}@y4a\"",
+            "HSO3(u?-N)[IdoA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-6)}@y4a\""
+         ]
+      ]
+   },
+   "HS6ST2" : {
+      "entrez" : 90161,
+      "group" : "Capping Sulfo",
+      "hgnc" : "HS6ST2",
+      "reactions" : [
+         [
+            "HSO3(u?-N)[GlcA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-6)}@y4a\"",
+            "HSO3(u?-N)[IdoA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-6)}@y4a\""
+         ]
+      ]
+   },
+   "HS6ST3" : {
+      "entrez" : 266722,
+      "group" : "Capping Sulfo",
+      "hgnc" : "HS6ST3",
+      "reactions" : [
+         [
+            "HSO3(u?-N)[GlcA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-6)}@y4a\"",
+            "HSO3(u?-N)[IdoA(b1-4)]GlcN(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-6)}@y4a\""
+         ]
+      ]
+   },
+   "LARGE1" : {
+      "entrez" : 9215,
+      "group" : "Core extension repeat",
+      "hgnc" : "LARGE1",
+      "reactions" : [
+         [
+            "GlcA(b1-3)*(u?-?)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{Xyl(a1-3)}@y12a\"",
+            "GlcA(b1-3)*(u?-?)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{Xyl(a1-3)}@y12a\"",
+            "GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{Xyl(a1-3)}@y10a\"",
+            "GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{Xyl(a1-3)}@y10a\""
+         ],
+         [
+            "Xyl(a1-3)GlcA(b1-3)*(u?-?)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{GlcA(b1-3)}@y13a\"",
+            "Xyl(a1-3)GlcA(b1-3)*(u?-?)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{GlcA(b1-3)}@y13a\"",
+            "Xyl(a1-3)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{GlcA(b1-3)}@y11a\"",
+            "Xyl(a1-3)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{GlcA(b1-3)}@y11a\""
+         ]
+      ]
+   },
+   "LARGE2" : {
+      "entrez" : 120071,
+      "group" : "Core extension repeat",
+      "hgnc" : "LARGE2",
+      "reactions" : [
+         [
+            "GlcA(b1-3)*(u?-?)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{Xyl(a1-3)}@y12a\"",
+            "GlcA(b1-3)*(u?-?)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{Xyl(a1-3)}@y12a\"",
+            "GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{Xyl(a1-3)}@y10a\"",
+            "GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{Xyl(a1-3)}@y10a\""
+         ],
+         [
+            "Xyl(a1-3)GlcA(b1-3)*(u?-?)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{GlcA(b1-3)}@y13a\"",
+            "Xyl(a1-3)GlcA(b1-3)*(u?-?)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{GlcA(b1-3)}@y13a\"",
+            "Xyl(a1-3)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{GlcA(b1-3)}@y11a\"",
+            "Xyl(a1-3)GlcA(b1-3)Xyl(b1-4)Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{GlcA(b1-3)}@y11a\""
+         ]
+      ]
+   },
+   "LFNG" : {
+      "entrez" : 3955,
+      "group" : "Core extension",
+      "hgnc" : "LFNG",
+      "reactions" : [
+         [
+            "Fuc(a1-O)Ser+\"{GlcNAc(b1-3)}@y2a\"",
+            "Fuc(a1-O)Thr+\"{GlcNAc(b1-3)}@y2a\""
+         ]
+      ]
+   },
+   "MAN1A1" : {
+      "entrez" : 4121,
+      "group" : "Core degradation",
+      "hgnc" : "MAN1A1",
+      "reactions" : [
+         []
+      ]
+   },
+   "MAN1A2" : {
+      "entrez" : 10905,
+      "group" : "Core degradation",
+      "hgnc" : "MAN1A2",
+      "reactions" : [
+         []
+      ]
+   },
+   "MAN1B1" : {
+      "entrez" : 11253,
+      "group" : "Core degradation",
+      "hgnc" : "MAN1B1",
+      "reactions" : [
+         []
+      ]
+   },
+   "MAN1C1" : {
+      "entrez" : 57134,
+      "group" : "Core degradation",
+      "hgnc" : "MAN1C1",
+      "reactions" : [
+         []
+      ]
+   },
+   "MFNG" : {
+      "entrez" : 4242,
+      "group" : "Core extension",
+      "hgnc" : "MFNG",
+      "reactions" : [
+         [
+            "Fuc(a1-O)Ser+\"{GlcNAc(b1-3)}@y2a\"",
+            "Fuc(a1-O)Thr+\"{GlcNAc(b1-3)}@y2a\""
+         ]
+      ]
+   },
+   "MGAT1" : {
+      "entrez" : 4245,
+      "group" : "Core extension",
+      "hgnc" : "MGAT1",
+      "reactions" : [
+         [
+            "Man(a1-3)[Man(a1-6)]Man(a1-6)[Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-2)}@y5a\"",
+            "Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-2)}@y5a\""
+         ]
+      ]
+   },
+   "MGAT2" : {
+      "entrez" : 4247,
+      "group" : "Branching",
+      "hgnc" : "MGAT2",
+      "reactions" : [
+         [
+            "GlcNAc(b1-2)Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-2)}@y5b\""
+         ]
+      ]
+   },
+   "MGAT3" : {
+      "entrez" : 4248,
+      "group" : "Branching",
+      "hgnc" : "MGAT3",
+      "reactions" : [
+         [
+            "GlcNAc(b1-2)Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-4)}@y4a\""
+         ]
+      ]
+   },
+   "MGAT4A" : {
+      "entrez" : 11320,
+      "group" : "Branching",
+      "hgnc" : "MGAT4A",
+      "reactions" : [
+         [
+            "GlcNAc(b1-2)Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-4)}@y5a\""
+         ]
+      ]
+   },
+   "MGAT4B" : {
+      "entrez" : 11282,
+      "group" : "Branching",
+      "hgnc" : "MGAT4B",
+      "reactions" : [
+         [
+            "GlcNAc(b1-2)Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-4)}@y5a\""
+         ]
+      ]
+   },
+   "MGAT4C" : {
+      "entrez" : 25834,
+      "group" : "Branching",
+      "hgnc" : "MGAT4C",
+      "reactions" : [
+         [
+            "GlcNAc(b1-2)Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-4)}@y5a\""
+         ]
+      ]
+   },
+   "MGAT5" : {
+      "entrez" : 4249,
+      "group" : "Branching",
+      "hgnc" : "MGAT5",
+      "reactions" : [
+         [
+            "GlcNAc(b1-2)Man(a1-3)[GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{GlcNAc(b1-6)}@y5b\""
+         ]
+      ]
+   },
+   "MGAT5B" : {
+      "entrez" : 146664,
+      "group" : "Branching",
+      "hgnc" : "MGAT5B",
+      "reactions" : [
+         [
+            "GlcNAc(b1-2)Man(a1-O)Ser+\"{GlcNAc(b1-6)}@y2a\"",
+            "GlcNAc(b1-2)Man(a1-O)Thr+\"{GlcNAc(b1-6)}@y2a\""
+         ]
+      ]
+   },
+   "MGEA5" : {
+      "entrez" : 10724,
+      "group" : "Degradation",
+      "hgnc" : "MGEA5",
+      "reactions" : [
+         []
+      ]
+   },
+   "NDST1" : {
+      "entrez" : 3340,
+      "group" : "Capping Sulfo",
+      "hgnc" : "NDST1",
+      "reactions" : [
+         [
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-N)GlcN}@y4a\"",
+            "IdoA(b1-4)GlcNAc(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-N)GlcN}@y4a\""
+         ]
+      ]
+   },
+   "NDST2" : {
+      "entrez" : 8509,
+      "group" : "Capping Sulfo",
+      "hgnc" : "NDST2",
+      "reactions" : [
+         [
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-N)GlcN}@y4a\"",
+            "IdoA(b1-4)GlcNAc(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-N)GlcN}@y4a\""
+         ]
+      ]
+   },
+   "NDST3" : {
+      "entrez" : 9348,
+      "group" : "Capping Sulfo",
+      "hgnc" : "NDST3",
+      "reactions" : [
+         [
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-N)GlcN}@y4a\"",
+            "IdoA(b1-4)GlcNAc(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-N)GlcN}@y4a\""
+         ]
+      ]
+   },
+   "NDST4" : {
+      "entrez" : 64579,
+      "group" : "Capping Sulfo",
+      "hgnc" : "NDST4",
+      "reactions" : [
+         [
+            "GlcA(b1-4)GlcNAc(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-N)GlcN}@y4a\"",
+            "IdoA(b1-4)GlcNAc(a1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-N)GlcN}@y4a\""
+         ]
+      ]
+   },
+   "OGT" : {
+      "entrez" : 8473,
+      "group" : "Initiation",
+      "hgnc" : "OGT",
+      "reactions" : [
+         [
+            "Ser+\"{GlcNAc(b1-O)}@y1a\"",
+            "Thr+\"{GlcNAc(b1-O)}@y1a\""
+         ]
+      ]
+   },
+   "PGAP4" : {
+      "entrez" : 84302,
+      "group" : "Core extension",
+      "hgnc" : "PGAP4",
+      "reactions" : [
+         [
+            "EtNP(u?-2)[EtNP(u?-6)Man(a1-2)Man(a1-6)]Man(a1-4)GlcN(a1-6)[acyl(u?-?)]PI+\"{GalNAc(b1-4)}@y3a\""
+         ]
+      ]
+   },
+   "PIGA" : {
+      "entrez" : 5277,
+      "group" : "Initiation",
+      "hgnc" : "PIGA",
+      "reactions" : [
+         [
+            "PI+\"{GlcNAc(a1-6)}@y1a\""
+         ]
+      ]
+   },
+   "PIGB" : {
+      "entrez" : 9488,
+      "group" : "Core extension",
+      "hgnc" : "PIGB",
+      "reactions" : [
+         [
+            "EtNP(u?-2)[Man(a1-6)]Man(a1-4)GlcN(a1-6)[acyl(u?-?)]PI+\"{Man(a1-2)}@y4b\""
+         ]
+      ]
+   },
+   "PIGG" : {
+      "entrez" : 54872,
+      "group" : "Core extension",
+      "hgnc" : "PIGG",
+      "reactions" : [
+         [
+            "EtNP(u?-2)[EtNP(u?-6)Man(a1-2)Man(a1-6)]Man(a1-4)GlcN(a1-6)[acyl(u?-?)]PI+\"{EtNP(u?-6)}@y4b\""
+         ]
+      ]
+   },
+   "PIGL" : {
+      "entrez" : 9487,
+      "group" : "Core extension",
+      "hgnc" : "PIGL",
+      "reactions" : [
+         [
+            "GlcNAc(a1-6)PI+\"{GlcN}@y2a\""
+         ]
+      ]
+   },
+   "PIGM" : {
+      "entrez" : 93183,
+      "group" : "Core extension",
+      "hgnc" : "PIGM",
+      "reactions" : [
+         [
+            "GlcN(a1-6)[acyl(u?-?)]PI+\"{Man(a1-4)}@y2a\""
+         ]
+      ]
+   },
+   "PIGN" : {
+      "entrez" : 23556,
+      "group" : "Core extension",
+      "hgnc" : "PIGN",
+      "reactions" : [
+         [
+            "Man(a1-6)Man(a1-4)GlcN(a1-6)[acyl(u?-?)]PI+\"{EtNP(u?-2)}@y3a\""
+         ]
+      ]
+   },
+   "PIGO" : {
+      "entrez" : 84720,
+      "group" : "Core extension",
+      "hgnc" : "PIGO",
+      "reactions" : [
+         [
+            "EtNP(u?-2)[Man(a1-2)Man(a1-2)Man(a1-6)]Man(a1-4)GlcN(a1-6)[acyl(u?-?)]PI+\"{EtNP(u?-6)}@y5a\"",
+            "EtNP(u?-2)[Man(a1-2)Man(a1-6)]Man(a1-4)GlcN(a1-6)[acyl(u?-?)]PI+\"{EtNP(u?-6)}@y5a\""
+         ]
+      ]
+   },
+   "PIGV" : {
+      "entrez" : 55650,
+      "group" : "Core extension",
+      "hgnc" : "PIGV",
+      "reactions" : [
+         [
+            "Man(a1-4)GlcN(a1-6)[acyl(u?-?)]PI+\"{Man(a1-6)}@y3a\""
+         ]
+      ]
+   },
+   "PIGW" : {
+      "entrez" : 284098,
+      "group" : "Core extension",
+      "hgnc" : "PIGW",
+      "reactions" : [
+         [
+            "GlcN(a1-6)PI+\"{acyl(u?-?)}@y1a\""
+         ]
+      ]
+   },
+   "PIGZ" : {
+      "entrez" : 80235,
+      "group" : "Core extension",
+      "hgnc" : "PIGZ",
+      "reactions" : [
+         [
+            "EtNP(u?-2)[Man(a1-2)Man(a1-6)]Man(a1-4)GlcN(a1-6)[acyl(u?-?)]PI+\"{Man(a1-2)}@y5a\""
+         ]
+      ]
+   },
+   "PLOD3" : {
+      "entrez" : 8985,
+      "group" : "Core extension",
+      "hgnc" : "PLOD3",
+      "reactions" : [
+         [
+            "Gal(b1-O)Hyl+\"{Glc(a1-2)}@y2a\""
+         ]
+      ]
+   },
+   "POFUT1" : {
+      "entrez" : 23509,
+      "group" : "Initiation",
+      "hgnc" : "POFUT1",
+      "reactions" : [
+         [
+            "Ser+\"{Fuc(a1-O)}@y1a\"",
+            "Thr+\"{Fuc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "POFUT2" : {
+      "entrez" : 23275,
+      "group" : "Initiation",
+      "hgnc" : "POFUT2",
+      "reactions" : [
+         [
+            "Ser+\"{Fuc(a1-O)}@y1a\"",
+            "Thr+\"{Fuc(a1-O)}@y1a\"",
+            "Ser+\"{Fuc(a1-O)}@y1a\"",
+            "Thr+\"{Fuc(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "POGLUT1" : {
+      "entrez" : 56983,
+      "group" : "Initiation",
+      "hgnc" : "POGLUT1",
+      "reactions" : [
+         [
+            "Ser+\"{Glc(b1-O)}@y1a\""
+         ]
+      ]
+   },
+   "POGLUT2" : {
+      "entrez" : 79070,
+      "group" : "Initiation",
+      "hgnc" : "POGLUT2",
+      "reactions" : [
+         [
+            "Ser+\"{Glc(b1-O)}@y1a\""
+         ]
+      ]
+   },
+   "POGLUT3" : {
+      "entrez" : 143888,
+      "group" : "Initiation",
+      "hgnc" : "POGLUT3",
+      "reactions" : [
+         [
+            "Ser+\"{Glc(b1-O)}@y1a\""
+         ]
+      ]
+   },
+   "POMGNT1" : {
+      "entrez" : 55624,
+      "group" : "Core extension",
+      "hgnc" : "POMGNT1",
+      "reactions" : [
+         [
+            "Man(a1-O)Ser+\"{GlcNAc(b1-2)}@y2a\"",
+            "Man(a1-O)Thr+\"{GlcNAc(b1-2)}@y2a\""
+         ]
+      ]
+   },
+   "POMGNT2" : {
+      "entrez" : 84892,
+      "group" : "Core extension",
+      "hgnc" : "POMGNT2",
+      "reactions" : [
+         [
+            "Man(a1-O)Ser+\"{GlcNAc(b1-4)}@y2a\"",
+            "Man(a1-O)Thr+\"{GlcNAc(b1-4)}@y2a\""
+         ]
+      ]
+   },
+   "POMK" : {
+      "entrez" : 84197,
+      "group" : "Core extension",
+      "hgnc" : "POMK",
+      "reactions" : [
+         [
+            "GalNAc(b1-3)GlcNAc(b1-4)Man(a1-O)Ser+\"{P(u1-6)}@y2a\"",
+            "GalNAc(b1-3)GlcNAc(b1-4)Man(a1-O)Thr+\"{P(u1-6)}@y2a\""
+         ]
+      ]
+   },
+   "POMT1" : {
+      "entrez" : 10585,
+      "group" : "Initiation",
+      "hgnc" : "POMT1",
+      "reactions" : [
+         [
+            "Ser+\"{Man(a1-O)}@y1a\"",
+            "Thr+\"{Man(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "POMT2" : {
+      "entrez" : 29954,
+      "group" : "Initiation",
+      "hgnc" : "POMT2",
+      "reactions" : [
+         [
+            "Ser+\"{Man(a1-O)}@y1a\"",
+            "Thr+\"{Man(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "RFNG" : {
+      "entrez" : 5986,
+      "group" : "Core extension",
+      "hgnc" : "RFNG",
+      "reactions" : [
+         [
+            "Fuc(a1-O)Ser+\"{GlcNAc(b1-3)}@y2a\"",
+            "Fuc(a1-O)Thr+\"{GlcNAc(b1-3)}@y2a\""
+         ]
+      ]
+   },
+   "RXYLT1" : {
+      "entrez" : 10329,
+      "group" : "Core extension",
+      "hgnc" : "RXYLT1",
+      "reactions" : [
+         [
+            "Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Ser+\"{Xyl(b1-4)}@y8a\"",
+            "Rbo(u5-1)P(u1-1)Rbo(u5-1)P(u1-3)GalNAc(b1-3)GlcNAc(b1-4)[P(u1-6)]Man(a1-O)Thr+\"{Xyl(b1-4)}@y8a\""
+         ]
+      ]
+   },
+   "ST3GAL1" : {
+      "entrez" : 6482,
+      "group" : "Capping",
+      "hgnc" : "ST3GAL1",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-3)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{NeuAc(a2-3)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{NeuAc(a2-3)}@y4a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y3a\""
+         ]
+      ]
+   },
+   "ST3GAL2" : {
+      "entrez" : 6483,
+      "group" : "Capping",
+      "hgnc" : "ST3GAL2",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-3)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{NeuAc(a2-3)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{NeuAc(a2-3)}@y4a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y3a\""
+         ]
+      ]
+   },
+   "ST3GAL3" : {
+      "entrez" : 6487,
+      "group" : "Capping",
+      "hgnc" : "ST3GAL3",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-3)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{NeuAc(a2-3)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{NeuAc(a2-3)}@y4a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y3a\""
+         ]
+      ]
+   },
+   "ST3GAL4" : {
+      "entrez" : 6484,
+      "group" : "Capping",
+      "hgnc" : "ST3GAL4",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-3)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{NeuAc(a2-3)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{NeuAc(a2-3)}@y4a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y3a\""
+         ]
+      ]
+   },
+   "ST3GAL5" : {
+      "entrez" : 8869,
+      "group" : "Capping",
+      "hgnc" : "ST3GAL5",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-3)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{NeuAc(a2-3)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{NeuAc(a2-3)}@y4a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y3a\""
+         ]
+      ]
+   },
+   "ST3GAL6" : {
+      "entrez" : 10402,
+      "group" : "Capping",
+      "hgnc" : "ST3GAL6",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-3)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-3)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-3)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{NeuAc(a2-3)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{NeuAc(a2-3)}@y4a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-3)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-3)}@y3a\""
+         ]
+      ]
+   },
+   "ST6GAL1" : {
+      "entrez" : 6480,
+      "group" : "Capping",
+      "hgnc" : "ST6GAL1",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-6)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-6)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{NeuAc(a2-6)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{NeuAc(a2-6)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{NeuAc(a2-6)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{NeuAc(a2-6)}@y4a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y3a\""
+         ]
+      ]
+   },
+   "ST6GAL2" : {
+      "entrez" : 84620,
+      "group" : "Capping",
+      "hgnc" : "ST6GAL2",
+      "reactions" : [
+         [
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-6)}@y8a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-6)}@y6a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "Gal(b1-?)Any(a1-O)Ser+\"{NeuAc(a2-6)}@y3a\"",
+            "Gal(b1-?)Any(a1-O)Thr+\"{NeuAc(a2-6)}@y3a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Ser+\"{NeuAc(a2-6)}@y4a\"",
+            "Gal(b1-?)*(u?-?)Any(a1-O)Thr+\"{NeuAc(a2-6)}@y4a\"",
+            "Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y3a\"",
+            "Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y3a\""
+         ]
+      ]
+   },
+   "ST6GALNAC1" : {
+      "entrez" : 55808,
+      "group" : "Capping",
+      "hgnc" : "ST6GALNAC1",
+      "reactions" : [
+         [
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-6)}@y8a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-3)Any(a1-O)Ser+\"{NeuAc(a2-6)}@y3a\"",
+            "GalNAc(b1-3)Any(a1-O)Thr+\"{NeuAc(a2-6)}@y3a\"",
+            "GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y2a\"",
+            "GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y2a\""
+         ]
+      ]
+   },
+   "ST6GALNAC2" : {
+      "entrez" : 10610,
+      "group" : "Capping",
+      "hgnc" : "ST6GALNAC2",
+      "reactions" : [
+         [
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-6)}@y8a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-3)Any(a1-O)Ser+\"{NeuAc(a2-6)}@y3a\"",
+            "GalNAc(b1-3)Any(a1-O)Thr+\"{NeuAc(a2-6)}@y3a\"",
+            "GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y2a\"",
+            "GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y2a\""
+         ]
+      ]
+   },
+   "ST6GALNAC3" : {
+      "entrez" : 256435,
+      "group" : "Capping",
+      "hgnc" : "ST6GALNAC3",
+      "reactions" : [
+         [
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-6)}@y8a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-3)Any(a1-O)Ser+\"{NeuAc(a2-6)}@y3a\"",
+            "GalNAc(b1-3)Any(a1-O)Thr+\"{NeuAc(a2-6)}@y3a\"",
+            "GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y2a\"",
+            "GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y2a\""
+         ]
+      ]
+   },
+   "ST6GALNAC4" : {
+      "entrez" : 27090,
+      "group" : "Capping",
+      "hgnc" : "ST6GALNAC4",
+      "reactions" : [
+         [
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-6)}@y8a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-3)Any(a1-O)Ser+\"{NeuAc(a2-6)}@y3a\"",
+            "GalNAc(b1-3)Any(a1-O)Thr+\"{NeuAc(a2-6)}@y3a\"",
+            "GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y2a\"",
+            "GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y2a\""
+         ]
+      ]
+   },
+   "ST6GALNAC5" : {
+      "entrez" : 81849,
+      "group" : "Capping",
+      "hgnc" : "ST6GALNAC5",
+      "reactions" : [
+         [
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-6)}@y8a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-3)Any(a1-O)Ser+\"{NeuAc(a2-6)}@y3a\"",
+            "GalNAc(b1-3)Any(a1-O)Thr+\"{NeuAc(a2-6)}@y3a\"",
+            "GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y2a\"",
+            "GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y2a\""
+         ]
+      ]
+   },
+   "ST6GALNAC6" : {
+      "entrez" : 30815,
+      "group" : "Capping",
+      "hgnc" : "ST6GALNAC6",
+      "reactions" : [
+         [
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-?)Man(a1-?)Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)Asn+\"{NeuAc(a2-6)}@y8a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer+\"{NeuAc(a2-6)}@y6a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-6)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Ser+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-4)*(u?-?)GlcNAc(b1-2)Man(a1-O)Thr+\"{NeuAc(a2-6)}@y5a\"",
+            "GalNAc(b1-3)Any(a1-O)Ser+\"{NeuAc(a2-6)}@y3a\"",
+            "GalNAc(b1-3)Any(a1-O)Thr+\"{NeuAc(a2-6)}@y3a\"",
+            "GalNAc(a1-O)Ser+\"{NeuAc(a2-6)}@y2a\"",
+            "GalNAc(a1-O)Thr+\"{NeuAc(a2-6)}@y2a\""
+         ]
+      ]
+   },
+   "ST8SIA1" : {
+      "entrez" : 6489,
+      "group" : "Capping",
+      "hgnc" : "ST8SIA1",
+      "reactions" : [
+         [
+            "NeuAc(a2-?)*+\"{NeuAc(a2-8)}@y2a\""
+         ]
+      ]
+   },
+   "ST8SIA2" : {
+      "entrez" : 8128,
+      "group" : "Capping",
+      "hgnc" : "ST8SIA2",
+      "reactions" : [
+         [
+            "NeuAc(a2-?)*+\"{NeuAc(a2-8)}@y2a\""
+         ]
+      ]
+   },
+   "ST8SIA3" : {
+      "entrez" : 51046,
+      "group" : "Capping",
+      "hgnc" : "ST8SIA3",
+      "reactions" : [
+         [
+            "NeuAc(a2-?)*+\"{NeuAc(a2-8)}@y2a\""
+         ]
+      ]
+   },
+   "ST8SIA4" : {
+      "entrez" : 7903,
+      "group" : "Capping",
+      "hgnc" : "ST8SIA4",
+      "reactions" : [
+         [
+            "NeuAc(a2-?)*+\"{NeuAc(a2-8)}@y2a\""
+         ]
+      ]
+   },
+   "ST8SIA5" : {
+      "entrez" : 29906,
+      "group" : "Capping",
+      "hgnc" : "ST8SIA5",
+      "reactions" : [
+         [
+            "NeuAc(a2-?)*+\"{NeuAc(a2-8)}@y2a\""
+         ]
+      ]
+   },
+   "ST8SIA6" : {
+      "entrez" : 338596,
+      "group" : "Capping",
+      "hgnc" : "ST8SIA6",
+      "reactions" : [
+         [
+            "NeuAc(a2-?)*+\"{NeuAc(a2-8)}@y2a\""
+         ]
+      ]
+   },
+   "STT3A" : {
+      "entrez" : 3703,
+      "group" : "Initiation",
+      "hgnc" : "STT3A",
+      "reactions" : [
+         [
+            "Asn+\"{Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)}@y1a\""
+         ]
+      ]
+   },
+   "STT3B" : {
+      "entrez" : 201595,
+      "group" : "Initiation",
+      "hgnc" : "STT3B",
+      "reactions" : [
+         [
+            "Asn+\"{Man(a1-3)[Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-N)}@y1a\""
+         ]
+      ]
+   },
+   "TMTC1" : {
+      "entrez" : 83857,
+      "group" : "Initiation",
+      "hgnc" : "TMTC1",
+      "reactions" : [
+         [
+            "Ser+\"{Man(a1-O)}@y1a\"",
+            "Thr+\"{Man(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "TMTC2" : {
+      "entrez" : 160335,
+      "group" : "Initiation",
+      "hgnc" : "TMTC2",
+      "reactions" : [
+         [
+            "Ser+\"{Man(a1-O)}@y1a\"",
+            "Thr+\"{Man(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "TMTC3" : {
+      "entrez" : 160418,
+      "group" : "Initiation",
+      "hgnc" : "TMTC3",
+      "reactions" : [
+         [
+            "Ser+\"{Man(a1-O)}@y1a\"",
+            "Thr+\"{Man(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "TMTC4" : {
+      "entrez" : 84899,
+      "group" : "Initiation",
+      "hgnc" : "TMTC4",
+      "reactions" : [
+         [
+            "Ser+\"{Man(a1-O)}@y1a\"",
+            "Thr+\"{Man(a1-O)}@y1a\""
+         ]
+      ]
+   },
+   "UGCG" : {
+      "entrez" : 7357,
+      "group" : "Initiation",
+      "hgnc" : "UGCG",
+      "reactions" : [
+         [
+            "Cer+\"{Glc(b1-?)}@y1a\""
+         ]
+      ]
+   },
+   "UGT8" : {
+      "entrez" : 7368,
+      "group" : "Initiation",
+      "hgnc" : "UGT8",
+      "reactions" : [
+         [
+            "Cer+\"{Gal(b1-?)}@y1a\""
+         ]
+      ]
+   },
+   "UST" : {
+      "entrez" : 10090,
+      "group" : "Capping Sulfo",
+      "hgnc" : "UST",
+      "reactions" : [
+         [
+            "GlcA(b1-3)GalNAc(b1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-2)}@y5a\"",
+            "IdoA(b1-3)GalNAc(b1-4)*(u?-?)Xyl(b1-O)Ser+\"{HSO3(u?-2)}@y5a\""
+         ]
+      ]
+   },
+   "XXYLT1" : {
+      "entrez" : 152002,
+      "group" : "Core extension",
+      "hgnc" : "XXYLT1",
+      "reactions" : [
+         [
+            "Xyl(a1-3)Glc(b1-O)Ser+\"{Xyl(a1-3)}@y3a\"",
+            "Xyl(a1-3)Glc(b1-O)Thr+\"{Xyl(a1-3)}@y3a\""
+         ]
+      ]
+   },
+   "XYLT1" : {
+      "entrez" : 64131,
+      "group" : "Initiation",
+      "hgnc" : "XYLT1",
+      "reactions" : [
+         [
+            "Ser+\"{Xyl(b1-O)}@y1a\""
+         ]
+      ]
+   },
+   "XYLT2" : {
+      "entrez" : 64132,
+      "group" : "Initiation",
+      "hgnc" : "XYLT2",
+      "reactions" : [
+         [
+            "Ser+\"{Xyl(b1-O)}@y1a\""
+         ]
+      ]
+   }
+}

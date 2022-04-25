@@ -17,11 +17,13 @@ Suggests:
     ggplot2,
     knitr,
     rmarkdown,
-    ggsugar,
+    ggsugar (>= 0.2.7),
     Seurat,
     SeuratObject,
     pbmcapply,
     edgeR,
+    grConvert (>= 0.1.0),
+    V8 (>= 3.2.0),
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Imports: Matrix, compositions
