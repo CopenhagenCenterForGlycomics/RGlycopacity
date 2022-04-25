@@ -14,9 +14,8 @@ rle_strings = function(strings) {
   do.call(rbind, lst)
 }
 
-if (requireNamespace("ggplot2",quietly=TRUE)) {
-
-#'@export
+#' @title ggplot2 facet based on glycogenome pathway
+#' @export
 facet_glycogenome <- function(genes = NULL, cols = NULL, scales = "free",
                        space = "free", shrink = TRUE
                        ) {
@@ -45,6 +44,8 @@ facet_glycogenome <- function(genes = NULL, cols = NULL, scales = "free",
       as.table = TRUE, switch = "both", drop = TRUE)
   )
 }
+
+if (requireNamespace("ggplot2",quietly=TRUE)) {
 
 FacetGlycogenome <- ggplot2::ggproto("FacetGlycogenome", ggplot2::FacetGrid,
   compute_layout = function(data,params) {
