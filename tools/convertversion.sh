@@ -25,7 +25,12 @@ function bump_version {
     then
         NEWVER=$NEWVER$div\1
     fi
-    echo $NEWVER
+    if [[ "$is_v" == 1 ]]
+    then
+        echo "v$NEWVER"
+    else
+        echo $NEWVER
+    fi
 }
 
 level=-1
@@ -41,8 +46,17 @@ if [ "$bump" == "patch" ]; then
 fi
 
 vstring=$(git describe HEAD --tags | rev | sed 's/g-/./' | sed 's/-/+/' | rev)
+
+if [[ "${vstring:0:1}" = "v" ]]
+then
+    is_v="v"
+else
+    is_v=""
+fi
+
+
 if echo "$vstring" | grep -q '\+'; then
-    pvstring=`echo $vstring | 
+    pvstring=`echo $vstring | sed -e 's/^v//' | 
          sed 's/\(^[0-9\.]*\)[^+]*[+]*\([0-9][0-9]*\)\.\([0-9a-f]*\)$/\1|\2|\3/'`
     version=`echo $pvstring | cut -f1 -d"|"`
     dist=-`echo $pvstring | cut -f2 -d"|"`
@@ -62,11 +76,12 @@ if echo "$vstring" | grep -q '\+'; then
 	rest=""
     fi
 
+
     if [ $level -gt -1 ]; then
-        echo $(bump_version $version $level)
+        echo ${is_v}$(bump_version $version $level)
     else
         ## Add .999 and distance
-        echo ${rest}$((lastnum)).999${dist}
+        echo ${is_v}${rest}$((lastnum)).999${dist}
     fi
 
 else 
