@@ -2,13 +2,18 @@ Package: RGlycopacity
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.1.0000
 Authors@R: 
-    person(given = "Leo",
+    c(person(given = "Leo",
            family = "Dworkin",
-           role = c("aut", "cre"),
+           role = c("aut"),
            email = "dtj288@alumni.ku.dk",
-           comment = c(ORCID = "0000-0001-7185-6680"))
+           comment = c(ORCID = "0000-0001-7185-6680")),
+    person(given = "Hiren",
+           family = "Joshi",
+           role = c("aut","cph","cre"),
+           email = "joshi@sund.ku.dk",
+           comment = c(ORCID = "0000-0002-8192-2829")))
 Description: What the package does (one paragraph).
-License: CC BY 4.0
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
