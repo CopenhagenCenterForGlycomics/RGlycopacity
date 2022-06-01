@@ -22,7 +22,7 @@ Suggests:
     ggplot2,
     knitr,
     rmarkdown,
-    ggsugar (>= 0.2.7),
+    ggsugar (>= 0.3.0),
     Seurat,
     SeuratObject,
     pbmcapply,
