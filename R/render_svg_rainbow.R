@@ -44,11 +44,27 @@ set_size = function(svg_doc, portrait=TRUE) {
   retval
 }
 
+fix_opacities = function(svg_doc) {
+  v8_ctx = get_v8();
+  v8_ctx$assign("svg_doc",svg_doc);
+  v8_ctx$eval(paste("fix_opacities(svg_doc).then( res => console.r.assign('svg_temp',res) )",sep=""));
+  retval=get('svg_temp',envir=.GlobalEnv);
+  rm('svg_temp',envir=.GlobalEnv);
+  retval
+}
+
 render_svg = function(svg_doc) {
   input_svg = tempfile("input",fileext=".svg")
   cat(svg_doc,file=input_svg,sep="\n")
   cairo_svg = tempfile("cairo",fileext=".svg")
   suppressMessages(grConvert::convertPicture(input_svg,cairo_svg))
-  grImport2::readPicture(cairo_svg)
+  
+  cairo_data = paste(readLines(cairo_svg),collapse='\n')
+  
+  fixed_cairo_svg = tempfile("cairo_new",fileext=".svg")
+  
+  cat(fix_opacities(cairo_data),file=fixed_cairo_svg)
+  
+  grImport2::readPicture(fixed_cairo_svg)
   grImport2::pictureGrob(grImport2::readPicture(cairo_svg))
 }

@@ -113,3 +113,25 @@ const perform_glycotopiary = async function(svg_doc,reactions_json,wanted_genes)
     console.log(err.stack);
   }
 }
+
+const lookup_opacity = function(root, id) {
+  id = id.replace('url(','').replace(')','');
+  let mask = root.querySelector(id);
+  return mask.querySelector('rect').style.fillOpacity;
+}
+
+const update_opacity = function(el, opacity) {
+  for (let child of el.querySelectorAll('path')) {
+    child.style.opacity = opacity;
+  }
+}
+
+const fix_opacities = async function(svg_doc) {
+  let renderer = load_sugar_svg(svg_doc);
+  let root = renderer.element.canvas;
+  for (let mask_el of root.querySelectorAll('use[mask]')) {
+    let opacity = lookup_opacity(root,mask_el.getAttribute('mask'));
+    update_opacity(root.querySelector(mask_el.getAttribute('xlink:href')),opacity);
+  }
+  console.r.assign('svg_temp',renderer.element.canvas.innerHTML);
+}
