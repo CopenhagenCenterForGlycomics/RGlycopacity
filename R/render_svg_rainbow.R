@@ -66,5 +66,5 @@ render_svg = function(svg_doc) {
   cat(fix_opacities(cairo_data),file=fixed_cairo_svg)
   
   grImport2::readPicture(fixed_cairo_svg)
-  grImport2::pictureGrob(grImport2::readPicture(cairo_svg))
+  grImport2::pictureGrob(grImport2::readPicture(fixed_cairo_svg))
 }
