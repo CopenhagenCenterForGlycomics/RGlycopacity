@@ -95,7 +95,7 @@ FacetGlycogenome <- ggplot2::ggproto("FacetGlycogenome", ggplot2::FacetGrid,
 
     used_pathways = unique(layout[,c('ROW','glycogene_pathway')])[,2]
 
-    pathways_indices = rle_strings(stringr::str_replace(as.character(layout$glycogene_pathway),":.*",""))
+    pathways_indices = rle_strings(stringr::str_replace(used_pathways,":.*",""))
 
     label_widths = list(drawn$widths[3])
 
