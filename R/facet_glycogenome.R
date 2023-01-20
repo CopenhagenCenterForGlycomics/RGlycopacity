@@ -50,18 +50,31 @@ if (requireNamespace("ggplot2",quietly=TRUE)) {
 FacetGlycogenome <- ggplot2::ggproto("FacetGlycogenome", ggplot2::FacetGrid,
   compute_layout = function(data,params) {
     data = lapply(data, function(df) {
+      
+      ordering_data = RGlycopacity::glycogenome_ordering[order(RGlycopacity::glycogenome_ordering$Group.Name),]
+      
       genes = lapply(params$rows, function(quo) rlang::eval_tidy(quo,df))
-      df$glycogene_pathway = with(RGlycopacity::glycogenome_ordering, setNames(Group.Name,HGNC))[genes[[1]]]
+      df$glycogene_pathway = as.character(with(ordering_data, setNames(Group.Name,HGNC))[genes[[1]]])
+      df$glycogene_pathway = ifelse(is.na(df$glycogene_pathway),'Other',df$glycogene_pathway)
+      df$glycogene_pathway = factor( df$glycogene_pathway, c(c(as.character(unique(ordering_data$Group.Name))),'Other') )
       df
     })
     params$rows = list(glycogene_pathway=quo(glycogene_pathway))
-    return(ggplot2::FacetGrid$compute_layout(data,params))
+    return_value = ggplot2::FacetGrid$compute_layout(data,params)
+    return(return_value)
   },
   map_data = function(data,layout,params) {
     genes = lapply(params$rows, function(quo) rlang::eval_tidy(quo,data))
-    data$glycogene_pathway = with(RGlycopacity::glycogenome_ordering, setNames(Group.Name,HGNC))[genes[[1]]]
+    ordering_data = RGlycopacity::glycogenome_ordering[order(RGlycopacity::glycogenome_ordering$Group.Name),]
+    
+    data$glycogene_pathway = as.character(with(ordering_data, setNames(Group.Name,HGNC))[genes[[1]]])
+    data$glycogene_pathway = ifelse(is.na(data$glycogene_pathway),'Other',data$glycogene_pathway)
+
     factor_name = rlang::as_name(params$rows[[1]])
-    data[[factor_name]] = factor(data[[factor_name]],rev( unique(RGlycopacity::glycogenome_ordering$HGNC )))
+    gene_symbols = data[[factor_name]]
+    other_genes = unique(gene_symbols[!gene_symbols %in% ordering_data$HGNC ])
+    data[[factor_name]] = factor(data[[factor_name]],c( rev( unique(ordering_data$HGNC )), other_genes ))
+    data = data[order(data[[factor_name]]),]
     params$rows = list(glycogene_pathway=quo(glycogene_pathway))
     return(ggplot2::FacetGrid$map_data(data,layout,params))
   },
