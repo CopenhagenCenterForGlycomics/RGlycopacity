@@ -133,6 +133,11 @@ expression_prediction <- function(ncells, pseudobulk) {
 
 }
 
+#'@export
+predictExpressionOverCutoff <- function(single_cell.list) {
+  single_cell.list$pseudobulks.sm > mean(expression_model.lm$xy.df$y[1:7])
+}
+
 #'@title single cell gene expression prediction wrapper
 #'
 #'@description predicted expression of a gene in a single cell cluster
