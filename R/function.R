@@ -11,7 +11,7 @@
 #'@importFrom Matrix t sparseVector rowMeans rowSums
 #'
 #'@export
-calculatePseudobulks <- function(obj.seurat) {
+calculatePseudobulks <- function(obj.seurat,renormalize=FALSE) {
 
   if (!requireNamespace('Seurat',quietly=TRUE)) {
     stop('Seurat package is not installed')
@@ -23,8 +23,12 @@ calculatePseudobulks <- function(obj.seurat) {
 
   requireNamespace('Matrix')
 
+  
+
   # 1e4 and log1p transforming raw counts
-  obj.seurat = Seurat::NormalizeData(obj.seurat, normalization.method = "LogNormalize", scale.factor = 10000, assay = 'RNA')
+  if (renormalize) {
+    obj.seurat = Seurat::NormalizeData(obj.seurat, normalization.method = "LogNormalize", scale.factor = 10000, assay = 'RNA')
+  }
   obj.sm = Seurat::GetAssayData(obj.seurat, slot = 'data')
   obj.sm = Matrix::t(obj.sm)
 
