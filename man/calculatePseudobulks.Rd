@@ -4,7 +4,7 @@
 \alias{calculatePseudobulks}
 \title{trimmed mean pseudobulk and pseudopresence calculation}
 \usage{
-calculatePseudobulks(obj.seurat)
+calculatePseudobulks(obj.seurat, renormalize = FALSE)
 }
 \arguments{
 \item{obj.seurat}{seurat object with raw counts and cell types as identities}

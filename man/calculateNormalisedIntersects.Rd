@@ -4,7 +4,10 @@
 \alias{calculateNormalisedIntersects}
 \title{Predicting glycosylation capacity in test data from reference data}
 \usage{
-calculateNormalisedIntersects(input.mat, dynamic_ranges.char)
+calculateNormalisedIntersects(
+  input.mat,
+  dynamic_ranges.char = available_ranges()
+)
 }
 \arguments{
 \item{input.mat}{an n gene x m sample matrix of values.}

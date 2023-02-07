@@ -138,6 +138,21 @@ predictExpressionOverCutoff <- function(single_cell.list) {
   single_cell.list$pseudobulks.sm > mean(expression_model.lm$xy.df$y[1:7])
 }
 
+#'@title Make a data frame predicting the expression of glycogenes from pseudobulk data
+#'
+#'@description Using the result data from calculatePseudobulks, we can
+#'             calculate the set of genes that are predicted to be expressed, and
+#'             where their pseudobulk values sit compared to a reference range
+#'@export
+calculateExpressedRange <- function(single_cell.list,reference=available_ranges()) {
+#  What would the exp do here?
+#  normalised = normaliseOnSEGs(exp(single_cell.list$pseudobulks.sm+1),log_transform=F)
+  normalised = normaliseOnSEGs(single_cell.list$pseudobulks.sm,log_transform=F)
+  intersects = calculateNormalisedIntersects(normalised,reference)
+  intersects = ifelse(as.matrix(single_cell.list$pseudobulks.sm[rownames(intersects),]) > mean(RGlycopacity:::expression_model.lm$xy.df$y[1:7]), intersects,NA)
+  as.data.frame(intersects)
+}
+
 #'@title single cell gene expression prediction wrapper
 #'
 #'@description predicted expression of a gene in a single cell cluster
@@ -268,7 +283,6 @@ predictPseudopresenceStability <- function(single_cell.list) {
 #'
 #'@return a data.frame of genes, annotations, and normalised counts
 #'
-#'@examples
 seg_normalisation <- function(
   genes,
   values,
@@ -308,7 +322,7 @@ normaliseOnSEGs <- function(input.mat, genes = row.names(input.mat), log_transfo
     do.call(
       cbind,
       lapply(
-        data.frame(input.mat),
+        data.frame(as.matrix(input.mat)),
         seg_normalisation,
         genes = genes,
         log_transform = log_transform))
@@ -369,6 +383,7 @@ transformToCLR <- function(input.mat) {
 #'@return a vector of quantiles
 #'
 #'@examples
+#'
 range_generation <- function(values, quantiles) { quantile(x = values, probs = quantiles, type = 1, na.rm = T) }
 
 #'@title Predicting dynamic ranges in test data
@@ -400,6 +415,18 @@ getNormalisedRanges <- function(input.mat, quantiles = c(0.05, 0.1, 0.25, 0.75, 
   ranges.mat
 }
 
+#'@title Available reference ranges
+#'@export
+available_ranges = function() {
+c('bulk_ranges',
+        'tabula_sapiens_ranges',
+        'panglao_musculus_ranges',
+        'TCGA_ranges',
+        'GTEx_ranges',
+        'panglao_musculus_unknown_ranges',
+        'panglao_musculus_known_ranges')
+}
+
 #'@title Predicting glycosylation capacity in test data from reference data
 #'
 #'@description this function determines whether a gene is expressed in test data by leveraging reference data
@@ -415,7 +442,7 @@ getNormalisedRanges <- function(input.mat, quantiles = c(0.05, 0.1, 0.25, 0.75, 
 #'@importFrom Matrix t rowSums
 #'
 #'@export
-calculateNormalisedIntersects <- function(input.mat, dynamic_ranges.char) {
+calculateNormalisedIntersects <- function(input.mat, dynamic_ranges.char = available_ranges()) {
 
   ## stop condition for empty arguements ----
   null_args <- names(Filter(Negate(isFALSE), eapply(environment(), is.null)))
@@ -427,14 +454,8 @@ calculateNormalisedIntersects <- function(input.mat, dynamic_ranges.char) {
 
   dynamic_ranges.char <-
     match.arg(
-      dynamic_ranges.char,
-      c('bulk_ranges',
-        'tabula_sapiens_ranges',
-        'panglao_musculus_ranges',
-        'TCGA_ranges',
-        'GTEx_ranges',
-        'panglao_musculus_unknown_ranges',
-        'panglao_musculus_known_ranges'))
+      dynamic_ranges.char
+    )
 
   ## filtering datasets for retrieved genes ----
   shared_genes <- intersect(unique(rownames(input.mat)), unique(colnames(dynamic_ranges[[dynamic_ranges.char]]$expression_quantiles)))
