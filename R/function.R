@@ -1,6 +1,34 @@
-#'@title trimmed mean pseudobulk and pseudopresence calculation
+#'@title Trimmed mean pseudobulk and pseudopresence calculation
 #'
-#'@description computing pseudobulks on seurat object
+#'@description Compute pseudobulks and pseudopresence values for a
+#'              count matrix. The pseudobulk is the average expression
+#'              count value for a single cluster of cells. The pseudopresence
+#'              is the number of cells that a non-zero count was found in.
+#'
+#'@param count.data Count data as a matrix, sparse matrix or Seurat object
+#'
+#'@return Pseudobulks, pseudopresence and cluster sizes
+#' \itemize{
+#'   \item pseudobulks.sm - Sparse matrix with pseudobulk values
+#'   \item pseudopresence.sm - Sparse matrix with counts of cells that non-zero expression was found in
+#'   \item cluster_sizes.vec - Sizes of individual clusters
+#' }
+calculatePseudobulks <- function(count.data,renormalize=FALSE, ...) {
+  UseMethod("calculatePseudobulks")
+}
+
+calculatePseudobulks.ngCMatrix <- function(count.data, ...) {
+  .NotYetImplemented()
+}
+
+calculatePseudobulks.matrix <- function(count.data, ...) {
+  .NotYetImplemented()
+}
+
+
+#'@title Trimmed mean pseudobulk and pseudopresence calculation
+#'
+#'@description Compute pseudobulks on seurat object
 #'
 #'@param obj.seurat seurat object with raw counts and cell types as identities
 #'
@@ -11,7 +39,7 @@
 #'@importFrom Matrix t sparseVector rowMeans rowSums
 #'
 #'@export
-calculatePseudobulks <- function(obj.seurat,renormalize=FALSE) {
+calculatePseudobulks.Seurat <- function(obj.seurat,renormalize=FALSE) {
 
   if (!requireNamespace('Seurat',quietly=TRUE)) {
     stop('Seurat package is not installed')
