@@ -322,7 +322,7 @@ seg_normalisation <- function(
 
   seg_values <- values[seg_indices]
 
-  geom_mean <- if(any(seg_values < 0)) { mean() } else { function(x) { exp(mean(log(x))) } }
+  geom_mean <- if(any(seg_values < 0,na.rm=T)) { mean() } else { function(x) { exp(mean(log(x))) } }
 
   seg_value <- geom_mean(seg_values)
 
