@@ -13,14 +13,17 @@
 #'   \item pseudopresence.sm - Sparse matrix with counts of cells that non-zero expression was found in
 #'   \item cluster_sizes.vec - Sizes of individual clusters
 #' }
+#'@export
 calculatePseudobulks <- function(count.data,renormalize=FALSE, ...) {
   UseMethod("calculatePseudobulks")
 }
 
+#'@export
 calculatePseudobulks.ngCMatrix <- function(count.data, ...) {
   .NotYetImplemented()
 }
 
+#'@export
 calculatePseudobulks.matrix <- function(count.data, ...) {
   .NotYetImplemented()
 }
