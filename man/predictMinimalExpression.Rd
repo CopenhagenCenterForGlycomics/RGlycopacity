@@ -15,6 +15,3 @@ an n gene x k cluster matrix of pvalues corresponding to the probability that th
 \description{
 predicted expression of a gene in a single cell cluster
 }
-\examples{
-
-}

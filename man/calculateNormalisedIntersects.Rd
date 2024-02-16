@@ -20,6 +20,3 @@ the set of prediction statuses computed from applying the expression quantiles f
 \description{
 this function determines whether a gene is expressed in test data by leveraging reference data
 }
-\examples{
-
-}

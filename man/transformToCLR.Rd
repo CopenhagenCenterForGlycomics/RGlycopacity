@@ -15,6 +15,3 @@ the set of ranges computed from applying the specified quantiles to each gene in
 \description{
 this function determines the clrs of a gene in test data
 }
-\examples{
-
-}

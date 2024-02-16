@@ -17,6 +17,3 @@ a list of expected mean pseudopresence, expected var pseudopresence and a pvalue
 \description{
 predicted expression of pseudobulk stability in a single cell cluster
 }
-\examples{
-
-}

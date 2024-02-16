@@ -17,6 +17,3 @@ a vector of quantiles
 \description{
 this function determines the quantiles of a vector
 }
-\examples{
-
-}

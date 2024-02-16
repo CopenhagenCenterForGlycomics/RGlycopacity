@@ -15,6 +15,3 @@ a vector of clrs
 \description{
 this function determines the clrs of a vector
 }
-\examples{
-
-}

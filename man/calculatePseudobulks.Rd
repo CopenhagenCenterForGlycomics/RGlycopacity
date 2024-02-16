@@ -2,19 +2,24 @@
 % Please edit documentation in R/function.R
 \name{calculatePseudobulks}
 \alias{calculatePseudobulks}
-\title{trimmed mean pseudobulk and pseudopresence calculation}
+\title{Trimmed mean pseudobulk and pseudopresence calculation}
 \usage{
-calculatePseudobulks(obj.seurat, renormalize = FALSE)
+calculatePseudobulks(count.data, renormalize = FALSE, ...)
 }
 \arguments{
-\item{obj.seurat}{seurat object with raw counts and cell types as identities}
+\item{count.data}{Count data as a matrix, sparse matrix or Seurat object}
 }
 \value{
-a list of pseudobulks, pseudopresences and cluster sizes
+Pseudobulks, pseudopresence and cluster sizes
+\itemize{
+\item pseudobulks.sm - Sparse matrix with pseudobulk values
+\item pseudopresence.sm - Sparse matrix with counts of cells that non-zero expression was found in
+\item cluster_sizes.vec - Sizes of individual clusters
+}
 }
 \description{
-computing pseudobulks on seurat object
-}
-\examples{
-
+Compute pseudobulks and pseudopresence values for a
+count matrix. The pseudobulk is the average expression
+count value for a single cluster of cells. The pseudopresence
+is the number of cells that a non-zero count was found in.
 }

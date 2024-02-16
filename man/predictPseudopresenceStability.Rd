@@ -15,6 +15,3 @@ a list of matrices corresponding to  expected mean pseudopresence, expected var 
 \description{
 predicted expression of pseudobulk stability in a single cell cluster
 }
-\examples{
-
-}

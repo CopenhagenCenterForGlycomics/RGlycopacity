@@ -17,6 +17,3 @@ a pvalue corresponding to the probability that the gene is expressed in the clus
 \description{
 predicted expression of a gene in a single cell cluster
 }
-\examples{
-
-}

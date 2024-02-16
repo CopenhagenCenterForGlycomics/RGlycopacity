@@ -19,6 +19,3 @@ a data.frame of genes, annotations, and normalised counts
 \description{
 normalising on a reference gene for downstream comparison of glycogene ranges of expression
 }
-\examples{
-
-}
