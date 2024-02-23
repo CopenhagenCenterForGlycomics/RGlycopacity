@@ -4,7 +4,11 @@
 \alias{calculatePseudobulks.Seurat}
 \title{Trimmed mean pseudobulk and pseudopresence calculation}
 \usage{
-\method{calculatePseudobulks}{Seurat}(obj.seurat, renormalize = FALSE)
+\method{calculatePseudobulks}{Seurat}(
+  obj.seurat,
+  renormalize = FALSE,
+  cores = parallel::detectCores()
+)
 }
 \arguments{
 \item{obj.seurat}{seurat object with raw counts and cell types as identities}

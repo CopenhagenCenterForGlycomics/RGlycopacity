@@ -40,9 +40,10 @@ calculatePseudobulks.matrix <- function(count.data, ...) {
 #'@examples
 #'
 #'@importFrom Matrix t sparseVector rowMeans rowSums
+#'@importFrom parallel detectCores
 #'
 #'@export
-calculatePseudobulks.Seurat <- function(obj.seurat,renormalize=FALSE) {
+calculatePseudobulks.Seurat <- function(obj.seurat,renormalize=FALSE,cores=parallel::detectCores()) {
 
   if (!requireNamespace('Seurat',quietly=TRUE)) {
     stop('Seurat package is not installed')
@@ -95,6 +96,7 @@ calculatePseudobulks.Seurat <- function(obj.seurat,renormalize=FALSE) {
               FUN = pbmcapply_function,
               obj.sm,
               row_indices,
+              mc.cores=cores,
               ignore.interactive = T),
             as, "sparseMatrix"))
         }))
@@ -373,9 +375,18 @@ normaliseOnSEGs <- function(input.mat, genes = row.names(input.mat), log_transfo
 #'@return a vector of clrs
 #'
 #'@examples
-#'
-#'@importFrom compositions clr
-clr_transform <- function(values) { compositions::clr(values) }
+clr_transform <- function(values) {
+  geometric_mean = function(x) {
+    total = length(x)
+    prod(x)^(1/total)
+  }
+  geometric_mean_val = geometric_mean(values[values > 0])
+  result = values
+  result[result < 0] <- NA
+  result = log(result/geometric_mean_val)
+  result[is.na(result)] <- 0
+  result
+}
 
 #'@title wrapper for computing clrs on test data
 #'
